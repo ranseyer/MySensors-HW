@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11366,6 +11366,168 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </deviceset>
 </devicesets>
 </library>
+<library name="microbuilder">
+<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
+
+&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
+
+&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
+&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
+
+&lt;h3&gt;License&lt;/h3&gt;
+&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
+&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;/p&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<text x="-1.524" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND">
+<description>&lt;b&gt;GND&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="hoperf">
+<packages>
+<package name="RFM">
+<wire x1="0" y1="16.3175" x2="19.65125" y2="16.3175" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="19.65125" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="1.2975" x2="0" y2="0.7975" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="3.13875" x2="0" y2="2.63875" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="5.13875" x2="0" y2="4.63875" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="7.13875" x2="0" y2="6.63875" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="9.2975" x2="0" y2="8.7975" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="11.2975" x2="0" y2="10.7975" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="13.45625" x2="0" y2="12.95625" width="0.127" layer="21" curve="-180"/>
+<wire x1="0" y1="0" x2="0" y2="0.7975" width="0.127" layer="21"/>
+<wire x1="0" y1="1.2975" x2="0" y2="2.63875" width="0.127" layer="21"/>
+<wire x1="0" y1="3.13875" x2="0" y2="4.63875" width="0.127" layer="21"/>
+<wire x1="0" y1="5.13875" x2="0" y2="6.63875" width="0.127" layer="21"/>
+<wire x1="0" y1="7.13875" x2="0" y2="8.7975" width="0.127" layer="21"/>
+<wire x1="0" y1="9.2975" x2="0" y2="10.7975" width="0.127" layer="21"/>
+<wire x1="0" y1="11.2975" x2="0" y2="12.95625" width="0.127" layer="21"/>
+<wire x1="0" y1="13.45625" x2="0" y2="15.02" width="0.127" layer="21"/>
+<wire x1="0" y1="15.52" x2="0" y2="16.3175" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="0.7975" x2="19.65125" y2="1.2975" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="2.63875" x2="19.65125" y2="3.13875" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="4.63875" x2="19.65125" y2="5.13875" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="6.7975" x2="19.65125" y2="7.2975" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="8.7975" x2="19.65125" y2="9.2975" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="10.7975" x2="19.65125" y2="11.2975" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="12.95625" x2="19.65125" y2="13.45625" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="0" x2="19.65125" y2="0.7975" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="1.2975" x2="19.65125" y2="2.63875" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="3.13875" x2="19.65125" y2="4.63875" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="5.13875" x2="19.65125" y2="6.7975" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="7.2975" x2="19.65125" y2="8.7975" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="9.2975" x2="19.65125" y2="10.7975" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="11.2975" x2="19.65125" y2="12.95625" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="13.45625" x2="19.65125" y2="15.02" width="0.127" layer="21"/>
+<wire x1="19.65125" y1="15.52" x2="19.65125" y2="16.3175" width="0.127" layer="21"/>
+<wire x1="0" y1="15.52" x2="0" y2="15.02" width="0.127" layer="21" curve="-180"/>
+<wire x1="19.65125" y1="15.02" x2="19.65125" y2="15.52" width="0.127" layer="21" curve="-180"/>
+<wire x1="2.54" y1="15.875" x2="2.54" y2="11.1125" width="0.127" layer="21"/>
+<wire x1="2.54" y1="11.1125" x2="15.875" y2="11.1125" width="0.127" layer="21"/>
+<wire x1="15.875" y1="11.1125" x2="15.875" y2="15.875" width="0.127" layer="21"/>
+<wire x1="15.875" y1="15.875" x2="2.54" y2="15.875" width="0.127" layer="21"/>
+<wire x1="3.01625" y1="7.3025" x2="3.01625" y2="3.65125" width="0.127" layer="21"/>
+<wire x1="3.01625" y1="3.65125" x2="6.50875" y2="3.65125" width="0.127" layer="21"/>
+<wire x1="6.50875" y1="3.81" x2="6.50875" y2="7.3025" width="0.127" layer="21"/>
+<wire x1="6.50875" y1="7.3025" x2="3.01625" y2="7.3025" width="0.127" layer="21"/>
+<smd name="RESET" x="0" y="15.27" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="DIO0" x="0" y="13.27" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="DIO2" x="0" y="9.0475" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="DIO3" x="0" y="6.88875" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="DIO4" x="0" y="4.88875" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="DIO5" x="0" y="2.88875" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="VCC" x="0" y="1.0475" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="GNDB" x="19.65125" y="1.0475" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="ANT" x="19.65125" y="2.88875" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="GNDA" x="19.65125" y="4.88875" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="SCK" x="19.65125" y="7.0475" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="MISO" x="19.65125" y="9.0475" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="MOSI" x="19.65125" y="11.0475" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="NSS" x="19.65125" y="13.20625" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="NC" x="19.65125" y="15.33375" dx="2.1844" dy="1.0668" layer="1"/>
+<smd name="DIO1" x="0" y="11.1425" dx="2.1844" dy="1.0668" layer="1"/>
+<text x="3.01625" y="17.30375" size="1.778" layer="25">&gt;NAME</text>
+<text x="2.54" y="-2.69875" size="1.778" layer="27">&gt;VALUE</text>
+<text x="5.44" y="12.96875" size="1.27" layer="21">RFM69HW</text>
+</package>
+</packages>
+<symbols>
+<symbol name="RFM69HW">
+<wire x1="-15.24" y1="7.62" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-33.02" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-33.02" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
+<pin name="RESET" x="-20.32" y="5.08" length="middle"/>
+<pin name="DIO0" x="-20.32" y="0" length="middle"/>
+<pin name="DIO1" x="-20.32" y="-5.08" length="middle"/>
+<pin name="DIO2" x="-20.32" y="-10.16" length="middle"/>
+<pin name="DIO3" x="-20.32" y="-15.24" length="middle"/>
+<pin name="DIO4" x="-20.32" y="-20.32" length="middle"/>
+<pin name="DIO5" x="-20.32" y="-25.4" length="middle"/>
+<pin name="VCC" x="-20.32" y="-30.48" length="middle"/>
+<pin name="GNDB" x="17.78" y="-30.48" length="middle" rot="R180"/>
+<pin name="ANT" x="17.78" y="-25.4" length="middle" rot="R180"/>
+<pin name="GNDA" x="17.78" y="-20.32" length="middle" rot="R180"/>
+<pin name="SCK" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="MISO" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="MOSI" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="NSS" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="NC" x="17.78" y="5.08" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RFM69HW">
+<gates>
+<gate name="A" symbol="RFM69HW" x="0" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="RFM">
+<connects>
+<connect gate="A" pin="ANT" pad="ANT"/>
+<connect gate="A" pin="DIO0" pad="DIO0"/>
+<connect gate="A" pin="DIO1" pad="DIO1"/>
+<connect gate="A" pin="DIO2" pad="DIO2"/>
+<connect gate="A" pin="DIO3" pad="DIO3"/>
+<connect gate="A" pin="DIO4" pad="DIO4"/>
+<connect gate="A" pin="DIO5" pad="DIO5"/>
+<connect gate="A" pin="GNDA" pad="GNDA"/>
+<connect gate="A" pin="GNDB" pad="GNDB"/>
+<connect gate="A" pin="MISO" pad="MISO"/>
+<connect gate="A" pin="MOSI" pad="MOSI"/>
+<connect gate="A" pin="NC" pad="NC"/>
+<connect gate="A" pin="NSS" pad="NSS"/>
+<connect gate="A" pin="RESET" pad="RESET"/>
+<connect gate="A" pin="SCK" pad="SCK"/>
+<connect gate="A" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11428,6 +11590,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="470K"/>
+<part name="RFM69W" library="hoperf" deviceset="RFM69HW" device=""/>
+<part name="U$2" library="microbuilder" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11460,6 +11624,9 @@ SHA Chip!</text>
 <text x="83.82" y="-212.09" size="3.81" layer="95" ratio="15">NModule Extensions</text>
 <text x="165.1" y="-212.09" size="3.81" layer="95" ratio="15">HomeMatic Universal
 (Pa-Pa)</text>
+<text x="297.18" y="-81.28" size="1.778" layer="97">Free Pins</text>
+<text x="320.04" y="-33.02" size="1.778" layer="91">RFM69(H)W</text>
+<text x="314.96" y="-81.28" size="1.778" layer="97">Nur mit 3,3V Arduino!</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="-281.94"/>
@@ -11528,6 +11695,8 @@ SHA Chip!</text>
 <instance part="GND7" gate="1" x="168.91" y="-176.53"/>
 <instance part="R1" gate="G$1" x="271.78" y="-152.4"/>
 <instance part="R3" gate="G$1" x="289.56" y="-152.4"/>
+<instance part="RFM69W" gate="A" x="327.66" y="-43.18"/>
+<instance part="U$2" gate="G$1" x="350.52" y="-78.74"/>
 </instances>
 <busses>
 </busses>
@@ -11648,6 +11817,16 @@ SHA Chip!</text>
 <wire x1="294.64" y1="-152.4" x2="307.34" y2="-152.4" width="0.1524" layer="91"/>
 <label x="294.64" y="-152.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="GNDB"/>
+<wire x1="345.44" y1="-73.66" x2="350.52" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="350.52" y1="-73.66" x2="350.52" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="RFM69W" gate="A" pin="GNDA"/>
+<wire x1="345.44" y1="-63.5" x2="350.52" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="-63.5" x2="350.52" y2="-73.66" width="0.1524" layer="91"/>
+<junction x="350.52" y="-73.66"/>
+</segment>
 </net>
 <net name="VCC" class="1">
 <segment>
@@ -11732,6 +11911,11 @@ SHA Chip!</text>
 <wire x1="214.63" y1="-156.21" x2="214.63" y2="-151.13" width="0.1524" layer="91"/>
 <junction x="214.63" y="-151.13"/>
 </segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="VCC"/>
+<wire x1="307.34" y1="-73.66" x2="289.56" y2="-73.66" width="0.1524" layer="91"/>
+<label x="292.1" y="-73.66" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TXD" class="0">
 <segment>
@@ -11776,6 +11960,12 @@ SHA Chip!</text>
 <wire x1="269.24" y1="-66.04" x2="271.78" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="-66.04" x2="246.38" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="ANT"/>
+<label x="248.92" y="-66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="ANT"/>
+<wire x1="345.44" y1="-68.58" x2="355.6" y2="-68.58" width="0.1524" layer="91"/>
+<label x="347.98" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D2_INT0" class="0">
@@ -11794,6 +11984,11 @@ SHA Chip!</text>
 <wire x1="102.87" y1="-240.03" x2="100.33" y2="-240.03" width="0.1524" layer="91"/>
 <label x="100.33" y="-240.03" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="DIO0"/>
+<wire x1="307.34" y1="-43.18" x2="289.56" y2="-43.18" width="0.1524" layer="91"/>
+<label x="292.1" y="-43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D10_SS" class="0">
 <segment>
@@ -11807,6 +12002,11 @@ SHA Chip!</text>
 <wire x1="215.9" y1="-58.42" x2="193.04" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="-58.42" x2="193.04" y2="-53.34" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="NSS"/>
+</segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="NSS"/>
+<wire x1="345.44" y1="-43.18" x2="363.22" y2="-43.18" width="0.1524" layer="91"/>
+<label x="347.98" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11_MOSI" class="0">
@@ -11825,6 +12025,11 @@ SHA Chip!</text>
 <wire x1="7.62" y1="-255.27" x2="30.48" y2="-255.27" width="0.1524" layer="91"/>
 <label x="11.43" y="-255.27" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="MOSI"/>
+<wire x1="345.44" y1="-48.26" x2="363.22" y2="-48.26" width="0.1524" layer="91"/>
+<label x="347.98" y="-48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D12_MISO" class="0">
 <segment>
@@ -11842,6 +12047,11 @@ SHA Chip!</text>
 <wire x1="7.62" y1="-228.6" x2="30.48" y2="-228.6" width="0.1524" layer="91"/>
 <label x="11.43" y="-228.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="MISO"/>
+<wire x1="345.44" y1="-53.34" x2="363.22" y2="-53.34" width="0.1524" layer="91"/>
+<label x="347.98" y="-53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D13_SCK" class="0">
 <segment>
@@ -11858,6 +12068,11 @@ SHA Chip!</text>
 <pinref part="SCK" gate="G$1" pin="P"/>
 <wire x1="7.62" y1="-234.95" x2="30.48" y2="-234.95" width="0.1524" layer="91"/>
 <label x="11.43" y="-234.95" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RFM69W" gate="A" pin="SCK"/>
+<wire x1="345.44" y1="-58.42" x2="363.22" y2="-58.42" width="0.1524" layer="91"/>
+<label x="347.98" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$14" class="0">
