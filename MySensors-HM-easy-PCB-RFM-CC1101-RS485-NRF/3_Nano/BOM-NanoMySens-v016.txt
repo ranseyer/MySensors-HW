@@ -1,0 +1,38 @@
+Stückliste exportiert aus D:/GitHub/MySensors-HW/MySensors-HM-easy-PCB-RFM-CC1101-RS485-NRF/3_Nano/NanoMySens-v016.sch am 22.12.2017 12:21
+
+Part    Value              Device                 Package        Description                                                                                                     PROD_ID   
+ANT     MICRO RF           M01PTH                 1X01           Header 1                                                                                                                  
+C1      10uF               CAP0805                0805           Capacitor                                                                                                                 
+C5      47uF               C-EUC1210              C1210          CAPACITOR, European symbol                                                                                                
+C14     30pf               CAP0805                0805           Capacitor                                                                                                                 
+C15     30pf               CAP0805                0805           Capacitor                                                                                                                 
+C31     100n               C-EUC0805              C0805          CAPACITOR, European symbol                                                                                                
+C32     100n               C-EUC0805              C0805          CAPACITOR, European symbol                                                                                                
+CONFIG  DTSM-3             DTSM-3                 DTSM-3         Diptronics SMD button 6x3.5 mm                                                                                            
+GND     WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+GND2    WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+HM1                        CONN_04                1X04           Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections CONN-09696
+HM2                        CONN_06SILK_FEMALE_PTH 1X06           Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections CONN-08437
+HM3                        CONN_04                1X04           Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections CONN-09696
+IC1     ATSHA204A          ATSHA204A              SOT23                                                                                                                                    
+IC31    ATMEGA168-TQFP     ATMEGA168-TQFP         TQFP32-08      Atmel Atmega 168/328/328P                                                                                                 
+L1      4,7uH              INDUCTOR0805           0805           Inductors                                                                                                                 
+MISO    WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+MOSI    WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+NC      WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+NMODULE CONNECTOR_10DUPONT CONNECTOR_10DUPONT     DUPONT_10                                                                                                                                
+R1      1M                 R-EU_R0805             R0805          RESISTOR, European symbol                                                                                                 
+R2      10k                RESISTOR0805-RES       0805           Resistor                                                                                                                  
+R3      470K               R-EU_R0805             R0805          RESISTOR, European symbol                                                                                                 
+R4      1M                 RESISTOR0805-RES       0805           Resistor                                                                                                                  
+R34     10K                R-EU_R0805             R0805          RESISTOR, European symbol                                                                                                 
+RESET   DTSM-3             DTSM-3                 DTSM-3         Diptronics SMD button 6x3.5 mm                                                                                            
+RFM69W  RFM69HW            RFM69HW                RFM                                                                                                                                      
+RST     WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+RXD     WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+SCK     WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+STEPUP  TLV61224           TI-TLV61224            SOT23-6L                                                                                                                                 
+TXD     WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+U1      RFM69HCW           RFM69HCW               RFM69HCW-XXXS2                                                                                                                           
+VCC     WIREPADSMD1,27-254 WIREPADSMD1,27-254     SMD1,27-2,54   Wire PAD connect wire on PCB                                                                                              
+Y2      8MHZ               CRYSTALTXC-7A          CRYSTAL-TXC-7A Various standard crystals. Proven footprints.                                                                             
