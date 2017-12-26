@@ -9307,9 +9307,9 @@ package type ST</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3048" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
 </class>
-<class number="1" name="PWR" width="0.4572" drill="0">
+<class number="1" name="PWR" width="0.4064" drill="0">
 </class>
 </classes>
 <parts>
@@ -9407,7 +9407,6 @@ siehe 1Wire...</text>
 von A 330  Ohm nach VCC, von B 330 Ohm nach GND. 
 Damit wird er Bus auf HIGH  gehalten wenn Teilnehmer passiv sind.
 AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
-<text x="408.94" y="-134.62" size="1.778" layer="97">Schraub 3,5mm</text>
 <text x="213.36" y="-99.06" size="1.778" layer="97">1 Vraw (typically unregulated voltage, either from motherboard to daughterboard or vice versa) Motherboard should have a jumper to cut onboard Vraw source if daughterboard provides Vraw. Be sure to check motherboard constraints on Vraw before connecting a daughterboard that provides Vraw (for over voltage protection). Should be able to source at least 100mA and all boards are recommended to support a voltage up to 24V on this pin.
 2 +3.3V fixed voltage (can source at least 100mA)
 3 VCCio (depending on MCU core voltage). Should not be used for heavy loads.
@@ -9496,7 +9495,7 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <attribute name="NAME" x="173.99" y="-208.5086" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="170.942" y="-218.44" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="F1" gate="G$1" x="444.5" y="-139.7" rot="R90"/>
+<instance part="F1" gate="G$1" x="165.1" y="-152.4" rot="R180"/>
 <instance part="X2" gate="-1" x="424.18" y="-185.42" smashed="yes" rot="R180">
 <attribute name="NAME" x="422.91" y="-184.531" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -9619,10 +9618,6 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="426.72" y1="-162.56" x2="436.88" y2="-162.56" width="0.1524" layer="91"/>
-<label x="426.72" y="-162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="327.66" y1="-213.36" x2="327.66" y2="-210.82" width="0.1524" layer="91"/>
@@ -9631,6 +9626,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="238.76" y1="-157.48" x2="238.76" y2="-170.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X2" gate="-4" pin="K"/>
+<wire x1="426.72" y1="-162.56" x2="439.42" y2="-162.56" width="0.1524" layer="91"/>
+<label x="426.72" y="-162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -9865,23 +9865,19 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 </net>
 <net name="VIN" class="1">
 <segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="-152.4" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="-152.4" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
-<label x="165.1" y="-152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="-165.1" x2="170.18" y2="-165.1" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="-165.1" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
-<junction x="170.18" y="-152.4"/>
-</segment>
-<segment>
 <pinref part="VIN" gate="G$1" pin="P"/>
 <wire x1="144.78" y1="-35.56" x2="167.64" y2="-35.56" width="0.1524" layer="91"/>
 <label x="148.59" y="-35.56" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="426.72" y1="-185.42" x2="436.88" y2="-185.42" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-1" pin="K"/>
+<wire x1="426.72" y1="-185.42" x2="439.42" y2="-185.42" width="0.1524" layer="91"/>
 <label x="426.72" y="-185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="F1" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="-152.4" x2="149.86" y2="-152.4" width="0.1524" layer="91"/>
+<label x="149.86" y="-152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -10084,7 +10080,8 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <junction x="172.72" y="-220.98"/>
 </segment>
 <segment>
-<wire x1="426.72" y1="-170.18" x2="436.88" y2="-170.18" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-3" pin="K"/>
+<wire x1="426.72" y1="-170.18" x2="439.42" y2="-170.18" width="0.1524" layer="91"/>
 <label x="426.72" y="-170.18" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -10104,25 +10101,14 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <junction x="177.8" y="-223.52"/>
 </segment>
 <segment>
-<wire x1="426.72" y1="-177.8" x2="436.88" y2="-177.8" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-2" pin="K"/>
+<wire x1="426.72" y1="-177.8" x2="439.42" y2="-177.8" width="0.1524" layer="91"/>
 <label x="426.72" y="-177.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UREG" class="1">
-<segment>
-<pinref part="F1" gate="G$1" pin="1"/>
-<wire x1="444.5" y1="-144.78" x2="444.5" y2="-149.86" width="0.1524" layer="91"/>
-<label x="444.5" y="-149.86" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="IN" class="1">
 <segment>
 <wire x1="430.53" y1="-132.08" x2="434.34" y2="-132.08" width="0.1524" layer="91"/>
-<label x="429.26" y="-132.08" size="1.778" layer="95"/>
-<pinref part="F1" gate="G$1" pin="2"/>
-<wire x1="444.5" y1="-132.08" x2="444.5" y2="-134.62" width="0.1524" layer="91"/>
-<label x="441.96" y="-132.08" size="1.778" layer="95"/>
-<wire x1="434.34" y1="-132.08" x2="444.5" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3" class="1">
@@ -10163,6 +10149,17 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="185.42" y1="-165.1" x2="185.42" y2="-170.18" width="0.1524" layer="91"/>
 <junction x="185.42" y="-165.1"/>
 <label x="185.42" y="-170.18" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="VIN-FUSED" class="1">
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="-152.4" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="-165.1" x2="170.18" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-165.1" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="F1" gate="G$1" pin="1"/>
+<junction x="170.18" y="-152.4"/>
 </segment>
 </net>
 </nets>
