@@ -9197,6 +9197,110 @@ package type ST</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="burr-brown">
+<description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT223">
+<description>&lt;b&gt;Smal Outline Transistor&lt;/b&gt;</description>
+<wire x1="-3.124" y1="1.731" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
+<wire x1="3.124" y1="-1.729" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
+<wire x1="-3.124" y1="1.731" x2="3.124" y2="1.731" width="0.1524" layer="21"/>
+<wire x1="3.124" y1="-1.729" x2="-3.124" y2="-1.729" width="0.1524" layer="21"/>
+<smd name="1" x="-2.2606" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="2" x="0.0254" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="3" x="2.3114" y="-3.1496" dx="1.4986" dy="2.0066" layer="1"/>
+<smd name="4" x="0" y="3.1496" dx="3.81" dy="2.0066" layer="1"/>
+<text x="-2.54" y="4.318" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.794" y="-5.842" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="1.778" x2="1.524" y2="3.302" layer="51"/>
+<rectangle x1="-2.667" y1="-3.302" x2="-1.905" y2="-1.778" layer="51"/>
+<rectangle x1="1.905" y1="-3.302" x2="2.667" y2="-1.778" layer="51"/>
+<rectangle x1="-0.381" y1="-3.302" x2="0.381" y2="-1.778" layer="51"/>
+</package>
+<package name="DD-3">
+<description>&lt;b&gt;DPAC&lt;/b&gt;</description>
+<wire x1="-5.398" y1="-4.445" x2="-5.084" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-5.084" y1="-4.445" x2="5.076" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="5.076" y1="-4.445" x2="5.398" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="-4.445" x2="5.398" y2="4.128" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="4.128" x2="-5.398" y2="4.128" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="4.128" x2="-5.398" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-5.084" y1="3.81" x2="5.076" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="5.076" y1="3.81" x2="5.076" y2="-4.445" width="0.1524" layer="21"/>
+<wire x1="-5.084" y1="-4.445" x2="-5.084" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="4.128" x2="-5.084" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="4.128" x2="5.076" y2="3.81" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="4.128" x2="-5.398" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="-5.398" y1="5.08" x2="-4.445" y2="5.715" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="5.715" x2="4.445" y2="5.715" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="5.715" x2="5.398" y2="5.08" width="0.1524" layer="21"/>
+<wire x1="5.398" y1="5.08" x2="5.398" y2="4.128" width="0.1524" layer="21"/>
+<smd name="1" x="-2.54" y="-7.9375" dx="1.27" dy="5.08" layer="1"/>
+<smd name="2" x="0" y="-7.9375" dx="1.27" dy="5.08" layer="1"/>
+<smd name="3" x="2.54" y="-7.9375" dx="1.27" dy="5.08" layer="1"/>
+<text x="-3.81" y="-10.795" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.175" y1="-9.525" x2="-1.905" y2="-4.445" layer="51"/>
+<rectangle x1="-0.635" y1="-9.525" x2="0.635" y2="-4.445" layer="51"/>
+<rectangle x1="1.905" y1="-9.525" x2="3.175" y2="-4.445" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="REG1118">
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="2.54" size="1.778" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="VIN" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="VOUT" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="GND" x="0" y="-12.7" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="REG1117" prefix="IC">
+<description>&lt;b&gt;800mA and 1A Low Dropout (LDO) Positive Regulator&lt;/b&gt;&lt;p&gt;
+1.8V, 2.5V, 2.85V, 3.3V, 5V, and Adj</description>
+<gates>
+<gate name="G$1" symbol="REG1118" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="REG1117" constant="no"/>
+<attribute name="OC_FARNELL" value="1097566" constant="no"/>
+<attribute name="OC_NEWARK" value="14P6981" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="F" package="DD-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="TEXAS INSTRUMENTS" constant="no"/>
+<attribute name="MPN" value="REG1117FAKTTT" constant="no"/>
+<attribute name="OC_FARNELL" value="1296120" constant="no"/>
+<attribute name="OC_NEWARK" value="87H2562" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9236,7 +9340,6 @@ package type ST</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="RESET" library="mechanics" deviceset="DTSM-3" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0805" value="4,7uH"/>
-<part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="1M"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="470K"/>
@@ -9272,6 +9375,7 @@ package type ST</description>
 <part name="IC2" library="microchip" deviceset="25*" device="SN" technology="AA080" value="AT25DF512C-SSHN-B"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="R2" library="Discrete" deviceset="R*" device="-0402" value="56k"/>
+<part name="IC3" library="burr-brown" deviceset="REG1117" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9295,7 +9399,7 @@ package type ST</description>
 <text x="124.46" y="-162.56" size="1.778" layer="95" rot="R270">Reset</text>
 <text x="7.62" y="-138.43" size="3.81" layer="95" ratio="15">Crypto</text>
 <text x="78.74" y="-138.43" size="3.81" layer="95" ratio="15">Buttons</text>
-<text x="139.7" y="-135.89" size="3.81" layer="95" ratio="15">Stepup</text>
+<text x="139.7" y="-135.89" size="3.81" layer="95" ratio="15">Regulator</text>
 <text x="411.48" y="-58.42" size="1.778" layer="97">RS485</text>
 <text x="218.44" y="-234.95" size="1.778" layer="95">VDD-Config
 siehe 1Wire...</text>
@@ -9304,37 +9408,37 @@ von A 330  Ohm nach VCC, von B 330 Ohm nach GND.
 Damit wird er Bus auf HIGH  gehalten wenn Teilnehmer passiv sind.
 AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <text x="408.94" y="-134.62" size="1.778" layer="97">Schraub 3,5mm</text>
-<text x="213.36" y="-99.06" size="1.778" layer="97">1	Vraw (typically unregulated voltage, either from motherboard to daughterboard or vice versa) Motherboard should have a jumper to cut onboard Vraw source if daughterboard provides Vraw. Be sure to check motherboard constraints on Vraw before connecting a daughterboard that provides Vraw (for over voltage protection). Should be able to source at least 100mA and all boards are recommended to support a voltage up to 24V on this pin.
-2	+3.3V fixed voltage (can source at least 100mA)
-3	VCCio (depending on MCU core voltage). Should not be used for heavy loads.
-4	GND
-5	MYSX_D1_DFM - Digital IO (USART TX (data from MCU))
-6	MYSX_D2_DTM - Digital IO (USART RX (data to MCU))
-7	MYSX_RST - Reset (On the board that carries the MCU, it is highly recommended that this pin has a 0.1uF capacitor in series for pulse “generation”)
-8	MYSX_LEGACY_ID – MYSX 1.x identification (2.0 daughterboards can tie this pin to VCC to allow the motherboard to determine if daughterboard is 1.x or 2.x. If identification is not needed or is undesired, pin can be used as regular analog input)
-9	MYSX_D3_INT - Digital IO (interrupt)
-10	MYSX_D4_INT - Digital IO (interrupt)
-11	MYSX_D5_PWM - Digital IO (PWM)
-12	MYSX_D6_PWM - Digital IO (PWM)
-13	MYSX_D7_SCL - Digital IO (I2C SCL)
-14	MYSX_D8_SDA - Digital IO (I2C SDA)
-15	MYSX_D9_A3 - Digital IO (analog input)
-16	MYSX_D10_A4 - Digital IO (analog input)
-17	MYSX_D11_MOSI - Digital IO (SPI MOSI)
-18	MYSX_D12_MISO - Digital IO (SPI MISO)
-19	MYSX_D13_SCK - Digital IO (SPI SCK)
-20	MYSX_D14_CS - Digital IO (also for SPI CS)
-21	MYSX_A5 - Analog input
-22	MYSX_A6 - Analog input
+<text x="213.36" y="-99.06" size="1.778" layer="97">1 Vraw (typically unregulated voltage, either from motherboard to daughterboard or vice versa) Motherboard should have a jumper to cut onboard Vraw source if daughterboard provides Vraw. Be sure to check motherboard constraints on Vraw before connecting a daughterboard that provides Vraw (for over voltage protection). Should be able to source at least 100mA and all boards are recommended to support a voltage up to 24V on this pin.
+2 +3.3V fixed voltage (can source at least 100mA)
+3 VCCio (depending on MCU core voltage). Should not be used for heavy loads.
+4 GND
+5 MYSX_D1_DFM - Digital IO (USART TX (data from MCU))
+6 MYSX_D2_DTM - Digital IO (USART RX (data to MCU))
+7 MYSX_RST - Reset (On the board that carries the MCU, it is highly recommended that this pin has a 0.1uF capacitor in series for pulse “generation”)
+8 MYSX_LEGACY_ID – MYSX 1.x identification (2.0 daughterboards can tie this pin to VCC to allow the motherboard to determine if daughterboard is 1.x or 2.x. If identification is not needed or is undesired, pin can be used as regular analog input)
+9 MYSX_D3_INT - Digital IO (interrupt)
+10 MYSX_D4_INT - Digital IO (interrupt)
+11 MYSX_D5_PWM - Digital IO (PWM)
+12 MYSX_D6_PWM - Digital IO (PWM)
+13 MYSX_D7_SCL - Digital IO (I2C SCL)
+14 MYSX_D8_SDA - Digital IO (I2C SDA)
+15 MYSX_D9_A3 - Digital IO (analog input)
+16 MYSX_D10_A4 - Digital IO (analog input)
+17 MYSX_D11_MOSI - Digital IO (SPI MOSI)
+18 MYSX_D12_MISO - Digital IO (SPI MISO)
+19 MYSX_D13_SCK - Digital IO (SPI SCK)
+20 MYSX_D14_CS - Digital IO (also for SPI CS)
+21 MYSX_A5 - Analog input
+22 MYSX_A6 - Analog input
 </text>
 <text x="142.24" y="-27.94" size="1.778" layer="97">mySX V2.6</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="-281.94"/>
 <instance part="FRAME2" gate="G$2" x="287.02" y="-281.94"/>
-<instance part="C5" gate="G$1" x="241.3" y="-170.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="241.427" y="-168.1226" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="246.507" y="-164.3126" size="1.778" layer="96" rot="R180"/>
+<instance part="C5" gate="G$1" x="238.76" y="-154.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="236.7026" y="-154.813" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="232.8926" y="-149.733" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="IC31" gate="G$1" x="90.17" y="-233.68"/>
 <instance part="GND29" gate="1" x="63.5" y="-278.13"/>
@@ -9364,19 +9468,18 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 </instance>
 <instance part="GND5" gate="1" x="12.7" y="-170.18"/>
 <instance part="PORT7" gate="G$1" x="60.96" y="-165.1"/>
-<instance part="P+1" gate="VCC" x="248.92" y="-144.78"/>
-<instance part="GND1" gate="1" x="236.22" y="-144.78" rot="R180"/>
+<instance part="P+1" gate="VCC" x="238.76" y="-139.7"/>
+<instance part="GND1" gate="1" x="238.76" y="-172.72"/>
 <instance part="3V3" gate="G$1" x="180.34" y="-35.56" smashed="yes"/>
 <instance part="GND" gate="G$1" x="180.34" y="-41.91" smashed="yes"/>
 <instance part="GND3" gate="1" x="82.55" y="-152.4" rot="R270"/>
 <instance part="CONFIG" gate="G$1" x="97.79" y="-152.4" rot="R270"/>
 <instance part="GND4" gate="1" x="82.55" y="-167.64" rot="R270"/>
 <instance part="RESET" gate="G$1" x="97.79" y="-167.64" rot="R270"/>
-<instance part="L1" gate="G$1" x="179.07" y="-151.13" rot="R90"/>
-<instance part="GND6" gate="1" x="184.15" y="-176.53"/>
-<instance part="GND7" gate="1" x="168.91" y="-176.53"/>
-<instance part="R1" gate="G$1" x="271.78" y="-152.4"/>
-<instance part="R3" gate="G$1" x="289.56" y="-152.4"/>
+<instance part="L1" gate="G$1" x="180.34" y="-152.4" rot="R90"/>
+<instance part="GND7" gate="1" x="203.2" y="-172.72"/>
+<instance part="R1" gate="G$1" x="177.8" y="-165.1"/>
+<instance part="R3" gate="G$1" x="193.04" y="-165.1"/>
 <instance part="RS485" gate="A" x="203.2" y="-223.52" rot="R180"/>
 <instance part="GND24" gate="1" x="222.25" y="-207.01" rot="R180"/>
 <instance part="R5" gate="G$1" x="182.88" y="-213.36" smashed="yes" rot="R270">
@@ -9429,6 +9532,7 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <instance part="IC2" gate="G$1" x="320.04" y="-200.66"/>
 <instance part="GND2" gate="1" x="327.66" y="-215.9"/>
 <instance part="R2" gate="R" x="297.18" y="-193.04" rot="R90"/>
+<instance part="IC3" gate="G$1" x="203.2" y="-152.4"/>
 </instances>
 <busses>
 </busses>
@@ -9475,13 +9579,6 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="236.22" y1="-157.48" x2="236.22" y2="-147.32" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="236.22" y1="-157.48" x2="236.22" y2="-170.18" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="-170.18" x2="238.76" y2="-170.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND" gate="G$1" pin="P"/>
 <wire x1="182.88" y1="-41.91" x2="205.74" y2="-41.91" width="0.1524" layer="91"/>
 <label x="186.69" y="-41.91" size="1.778" layer="95"/>
@@ -9498,18 +9595,12 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="168.91" y1="-168.91" x2="168.91" y2="-171.45" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="-171.45" x2="168.91" y2="-173.99" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="184.15" y1="-173.99" x2="184.15" y2="-166.37" width="0.1524" layer="91"/>
-<wire x1="184.15" y1="-166.37" x2="189.23" y2="-166.37" width="0.1524" layer="91"/>
-</segment>
-<segment>
+<wire x1="203.2" y1="-165.1" x2="203.2" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-167.64" x2="203.2" y2="-170.18" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="-152.4" x2="307.34" y2="-152.4" width="0.1524" layer="91"/>
-<label x="294.64" y="-152.4" size="1.778" layer="95"/>
+<wire x1="198.12" y1="-165.1" x2="203.2" y2="-165.1" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="GND"/>
+<junction x="203.2" y="-165.1"/>
 </segment>
 <segment>
 <pinref part="GND24" gate="1" pin="GND"/>
@@ -9535,6 +9626,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="327.66" y1="-213.36" x2="327.66" y2="-210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="238.76" y1="-157.48" x2="238.76" y2="-170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="1">
@@ -9579,21 +9675,6 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <label x="44.45" y="-154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="-170.18" x2="248.92" y2="-170.18" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="248.92" y1="-170.18" x2="248.92" y2="-157.48" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-157.48" x2="248.92" y2="-147.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="229.87" y1="-151.13" x2="219.71" y2="-151.13" width="0.1524" layer="91"/>
-<wire x1="219.71" y1="-151.13" x2="214.63" y2="-151.13" width="0.1524" layer="91"/>
-<wire x1="146.05" y1="-146.05" x2="229.87" y2="-146.05" width="0.1524" layer="91"/>
-<wire x1="229.87" y1="-146.05" x2="229.87" y2="-151.13" width="0.1524" layer="91"/>
-<label x="146.05" y="-146.05" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="214.63" y1="-156.21" x2="214.63" y2="-151.13" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="RS485" gate="A" pin="VCC"/>
 <wire x1="220.98" y1="-228.6" x2="232.41" y2="-228.6" width="0.1524" layer="91"/>
 <label x="222.25" y="-228.6" size="1.778" layer="95"/>
@@ -9632,6 +9713,16 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="R2" gate="R" pin="2"/>
 <wire x1="297.18" y1="-189.23" x2="297.18" y2="-187.96" width="0.1524" layer="91"/>
 <label x="332.74" y="-187.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="VCC" pin="VCC"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="238.76" y1="-142.24" x2="238.76" y2="-149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="VOUT"/>
+<wire x1="215.9" y1="-152.4" x2="223.52" y2="-152.4" width="0.1524" layer="91"/>
+<label x="223.52" y="-152.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RXD" class="0">
@@ -9775,29 +9866,22 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <net name="VIN" class="1">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="171.45" y1="-151.13" x2="168.91" y2="-151.13" width="0.1524" layer="91"/>
-<junction x="168.91" y="-151.13"/>
-<wire x1="168.91" y1="-151.13" x2="168.91" y2="-156.21" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="-156.21" x2="168.91" y2="-161.29" width="0.1524" layer="91"/>
-<wire x1="146.05" y1="-151.13" x2="168.91" y2="-151.13" width="0.1524" layer="91"/>
-<junction x="168.91" y="-151.13"/>
-<wire x1="189.23" y1="-156.21" x2="184.15" y2="-156.21" width="0.1524" layer="91"/>
-<junction x="168.91" y="-156.21"/>
-<wire x1="184.15" y1="-156.21" x2="168.91" y2="-156.21" width="0.1524" layer="91"/>
-<wire x1="189.23" y1="-161.29" x2="184.15" y2="-161.29" width="0.1524" layer="91"/>
-<wire x1="184.15" y1="-161.29" x2="184.15" y2="-156.21" width="0.1524" layer="91"/>
-<junction x="184.15" y="-156.21"/>
-<label x="146.05" y="-151.13" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
+<wire x1="172.72" y1="-152.4" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-152.4" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
+<label x="165.1" y="-152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="266.7" y1="-152.4" x2="256.54" y2="-152.4" width="0.1524" layer="91"/>
-<label x="256.54" y="-152.4" size="1.778" layer="95"/>
+<wire x1="172.72" y1="-165.1" x2="170.18" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="-165.1" x2="170.18" y2="-152.4" width="0.1524" layer="91"/>
+<junction x="170.18" y="-152.4"/>
 </segment>
 <segment>
 <pinref part="VIN" gate="G$1" pin="P"/>
 <wire x1="144.78" y1="-35.56" x2="167.64" y2="-35.56" width="0.1524" layer="91"/>
 <label x="148.59" y="-35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="426.72" y1="-185.42" x2="436.88" y2="-185.42" width="0.1524" layer="91"/>
+<label x="426.72" y="-185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -9966,10 +10050,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <junction x="297.18" y="-198.12"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="RAW" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="189.23" y1="-151.13" x2="186.69" y2="-151.13" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="-152.4" x2="187.96" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="D9" class="0">
@@ -10029,10 +10114,6 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="444.5" y1="-144.78" x2="444.5" y2="-149.86" width="0.1524" layer="91"/>
 <label x="444.5" y="-149.86" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
-<segment>
-<wire x1="426.72" y1="-185.42" x2="436.88" y2="-185.42" width="0.1524" layer="91"/>
-<label x="426.72" y="-185.42" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="IN" class="1">
 <segment>
@@ -10077,12 +10158,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="284.48" y1="-152.4" x2="279.4" y2="-152.4" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="-152.4" x2="276.86" y2="-152.4" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="-152.4" x2="279.4" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="-147.32" x2="307.34" y2="-147.32" width="0.1524" layer="91"/>
-<junction x="279.4" y="-152.4"/>
-<label x="294.64" y="-147.32" size="1.778" layer="95"/>
+<wire x1="187.96" y1="-165.1" x2="185.42" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-165.1" x2="182.88" y2="-165.1" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="-165.1" x2="185.42" y2="-170.18" width="0.1524" layer="91"/>
+<junction x="185.42" y="-165.1"/>
+<label x="185.42" y="-170.18" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
