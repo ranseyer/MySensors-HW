@@ -13799,27 +13799,22 @@ Silk outline shows header location.
 <part name="I2C-2" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="MOTION" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="OPT" library="SparkFun-Connectors" deviceset="CONN_04" device=""/>
-<part name="JP11" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
-<part name="JP12" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP14" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP15" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP16" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
-<part name="JP4" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP5" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP6" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP7" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP8" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
-<part name="JP9" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP10" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP13" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
-<part name="JP17" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP18" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP19" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP20" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP21" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
-<part name="JP22" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="JP23" library="pinhead-2" deviceset="PINHD-1X04" device="_2.54-S"/>
 <part name="OPT1" library="SparkFun-Connectors" deviceset="CONN_04" device=""/>
+<part name="SV2" library="con-lstb" deviceset="MA10-2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13878,6 +13873,7 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <text x="309.88" y="-144.78" size="1.778" layer="104">Motion</text>
 <text x="261.62" y="-114.3" size="1.778" layer="97">Div</text>
 <text x="398.78" y="-91.44" size="1.778" layer="97">Free Pins</text>
+<text x="160.02" y="-48.26" size="1.778" layer="97">ExtensionPCB</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="-281.94"/>
@@ -13976,12 +13972,6 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <attribute name="VALUE" x="322.58" y="-153.67" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="OPT" gate="G$1" x="312.42" y="-124.46" rot="R270"/>
-<instance part="JP11" gate="A" x="434.34" y="-101.6" smashed="yes" rot="R90">
-<attribute name="VALUE" x="441.96" y="-107.95" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="JP12" gate="A" x="419.1" y="-111.76" smashed="yes" rot="R90">
-<attribute name="VALUE" x="426.72" y="-118.11" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP14" gate="A" x="431.8" y="-116.84" smashed="yes" rot="R270">
 <attribute name="VALUE" x="424.18" y="-110.49" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -13990,9 +13980,6 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 </instance>
 <instance part="JP16" gate="A" x="419.1" y="-91.44" smashed="yes" rot="R90">
 <attribute name="VALUE" x="426.72" y="-97.79" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="JP4" gate="A" x="419.1" y="-101.6" smashed="yes" rot="R90">
-<attribute name="VALUE" x="426.72" y="-107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP5" gate="A" x="449.58" y="-121.92" smashed="yes" rot="R90">
 <attribute name="VALUE" x="457.2" y="-128.27" size="1.778" layer="96" rot="R90"/>
@@ -14006,17 +13993,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <instance part="JP8" gate="A" x="449.58" y="-91.44" smashed="yes" rot="R90">
 <attribute name="VALUE" x="457.2" y="-97.79" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP9" gate="A" x="434.34" y="-91.44" smashed="yes" rot="R90">
-<attribute name="VALUE" x="441.96" y="-97.79" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP10" gate="A" x="482.6" y="-101.6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="490.22" y="-107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP13" gate="A" x="467.36" y="-111.76" smashed="yes" rot="R90">
 <attribute name="VALUE" x="474.98" y="-118.11" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="JP17" gate="A" x="480.06" y="-116.84" smashed="yes" rot="R270">
-<attribute name="VALUE" x="472.44" y="-110.49" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="JP18" gate="A" x="467.36" y="-91.44" smashed="yes" rot="R90">
 <attribute name="VALUE" x="474.98" y="-97.79" size="1.778" layer="96" rot="R90"/>
@@ -14030,13 +14011,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <instance part="JP21" gate="A" x="497.84" y="-101.6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="505.46" y="-107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP22" gate="A" x="497.84" y="-91.44" smashed="yes" rot="R90">
-<attribute name="VALUE" x="505.46" y="-97.79" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP23" gate="A" x="482.6" y="-91.44" smashed="yes" rot="R90">
 <attribute name="VALUE" x="490.22" y="-97.79" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="OPT1" gate="G$1" x="106.68" y="-99.06"/>
+<instance part="SV2" gate="G$1" x="165.1" y="-66.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14171,6 +14150,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="312.42" y1="-129.54" x2="312.42" y2="-139.7" width="0.1524" layer="91"/>
 <label x="312.42" y="-132.08" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="4"/>
+<wire x1="172.72" y1="-58.42" x2="185.42" y2="-58.42" width="0.1524" layer="91"/>
+<label x="185.42" y="-58.42" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="VCC" class="1">
 <segment>
@@ -14291,6 +14275,16 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="309.88" y1="-129.54" x2="309.88" y2="-139.7" width="0.1524" layer="91"/>
 <label x="309.88" y="-132.08" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="3"/>
+<wire x1="147.32" y1="-58.42" x2="157.48" y2="-58.42" width="0.1524" layer="91"/>
+<label x="147.32" y="-58.42" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="-55.88" x2="185.42" y2="-55.88" width="0.1524" layer="91"/>
+<label x="185.42" y="-55.88" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="RXD" class="0">
 <segment>
@@ -14302,6 +14296,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="SV1" gate="G$1" pin="6"/>
 <wire x1="111.76" y1="-60.96" x2="124.46" y2="-60.96" width="0.1524" layer="91"/>
 <label x="124.46" y="-60.96" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="6"/>
+<wire x1="172.72" y1="-60.96" x2="185.42" y2="-60.96" width="0.1524" layer="91"/>
+<label x="185.42" y="-60.96" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="D2_INT0" class="0">
@@ -14330,6 +14329,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="111.76" y1="-78.74" x2="124.46" y2="-78.74" width="0.1524" layer="91"/>
 <label x="124.46" y="-78.74" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="20"/>
+<wire x1="172.72" y1="-78.74" x2="185.42" y2="-78.74" width="0.1524" layer="91"/>
+<label x="185.42" y="-78.74" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="D11_MOSI" class="0">
 <segment>
@@ -14346,6 +14350,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="SV1" gate="G$1" pin="17"/>
 <wire x1="86.36" y1="-76.2" x2="96.52" y2="-76.2" width="0.1524" layer="91"/>
 <label x="86.36" y="-76.2" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="17"/>
+<wire x1="147.32" y1="-76.2" x2="157.48" y2="-76.2" width="0.1524" layer="91"/>
+<label x="147.32" y="-76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="D12_MISO" class="0">
@@ -14364,6 +14373,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="111.76" y1="-76.2" x2="124.46" y2="-76.2" width="0.1524" layer="91"/>
 <label x="124.46" y="-76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="18"/>
+<wire x1="172.72" y1="-76.2" x2="185.42" y2="-76.2" width="0.1524" layer="91"/>
+<label x="185.42" y="-76.2" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="D13_SCK" class="0">
 <segment>
@@ -14380,6 +14394,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="SV1" gate="G$1" pin="19"/>
 <wire x1="86.36" y1="-78.74" x2="96.52" y2="-78.74" width="0.1524" layer="91"/>
 <label x="86.36" y="-78.74" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="19"/>
+<wire x1="147.32" y1="-78.74" x2="157.48" y2="-78.74" width="0.1524" layer="91"/>
+<label x="147.32" y="-78.74" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -14429,6 +14448,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="86.36" y1="-71.12" x2="96.52" y2="-71.12" width="0.1524" layer="91"/>
 <label x="86.36" y="-71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="13"/>
+<wire x1="147.32" y1="-71.12" x2="157.48" y2="-71.12" width="0.1524" layer="91"/>
+<label x="147.32" y="-71.12" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="VIN" class="1">
 <segment>
@@ -14445,6 +14469,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="SV1" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="-55.88" x2="86.36" y2="-55.88" width="0.1524" layer="91"/>
 <label x="86.36" y="-55.88" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="-55.88" x2="147.32" y2="-55.88" width="0.1524" layer="91"/>
+<label x="147.32" y="-55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -14477,6 +14506,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="OPT" gate="G$1" pin="4"/>
 <wire x1="317.5" y1="-129.54" x2="317.5" y2="-139.7" width="0.1524" layer="91"/>
 <label x="317.5" y="-132.08" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="16"/>
+<wire x1="172.72" y1="-73.66" x2="185.42" y2="-73.66" width="0.1524" layer="91"/>
+<label x="185.42" y="-73.66" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -14527,6 +14561,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="86.36" y1="-66.04" x2="96.52" y2="-66.04" width="0.1524" layer="91"/>
 <label x="86.36" y="-66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="9"/>
+<wire x1="147.32" y1="-66.04" x2="157.48" y2="-66.04" width="0.1524" layer="91"/>
+<label x="147.32" y="-66.04" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="A1" class="0">
 <segment>
@@ -14546,6 +14585,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="111.76" y1="-68.58" x2="124.46" y2="-68.58" width="0.1524" layer="91"/>
 <label x="124.46" y="-68.58" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="12"/>
+<wire x1="172.72" y1="-68.58" x2="185.42" y2="-68.58" width="0.1524" layer="91"/>
+<label x="185.42" y="-68.58" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="A0" class="0">
 <segment>
@@ -14562,6 +14606,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="OPT1" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="-99.06" x2="121.92" y2="-99.06" width="0.1524" layer="91"/>
 <label x="114.3" y="-99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="8"/>
+<wire x1="172.72" y1="-63.5" x2="185.42" y2="-63.5" width="0.1524" layer="91"/>
+<label x="185.42" y="-63.5" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -14582,6 +14631,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="86.36" y1="-73.66" x2="96.52" y2="-73.66" width="0.1524" layer="91"/>
 <label x="86.36" y="-73.66" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="15"/>
+<wire x1="147.32" y1="-73.66" x2="157.48" y2="-73.66" width="0.1524" layer="91"/>
+<label x="147.32" y="-73.66" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="D5" class="0">
 <segment>
@@ -14593,6 +14647,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="SV1" gate="G$1" pin="11"/>
 <wire x1="86.36" y1="-68.58" x2="96.52" y2="-68.58" width="0.1524" layer="91"/>
 <label x="86.36" y="-68.58" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="11"/>
+<wire x1="147.32" y1="-68.58" x2="157.48" y2="-68.58" width="0.1524" layer="91"/>
+<label x="147.32" y="-68.58" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="D4" class="0">
@@ -14610,6 +14669,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="MOTION" gate="A" pin="3"/>
 <wire x1="314.96" y1="-149.86" x2="314.96" y2="-163.83" width="0.1524" layer="91"/>
 <label x="314.96" y="-163.83" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="10"/>
+<wire x1="172.72" y1="-66.04" x2="185.42" y2="-66.04" width="0.1524" layer="91"/>
+<label x="185.42" y="-66.04" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="A7" class="0">
@@ -14645,6 +14709,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <wire x1="86.36" y1="-63.5" x2="96.52" y2="-63.5" width="0.1524" layer="91"/>
 <label x="86.36" y="-63.5" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="7"/>
+<wire x1="147.32" y1="-63.5" x2="157.48" y2="-63.5" width="0.1524" layer="91"/>
+<label x="147.32" y="-63.5" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="D8" class="0">
 <segment>
@@ -14670,6 +14739,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="SV1" gate="G$1" pin="14"/>
 <wire x1="111.76" y1="-71.12" x2="124.46" y2="-71.12" width="0.1524" layer="91"/>
 <label x="124.46" y="-71.12" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="14"/>
+<wire x1="172.72" y1="-71.12" x2="185.42" y2="-71.12" width="0.1524" layer="91"/>
+<label x="185.42" y="-71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="RAW" class="0">
@@ -14747,6 +14821,11 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <pinref part="SV1" gate="G$1" pin="5"/>
 <wire x1="96.52" y1="-60.96" x2="86.36" y2="-60.96" width="0.1524" layer="91"/>
 <label x="86.36" y="-60.96" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="G$1" pin="5"/>
+<wire x1="157.48" y1="-60.96" x2="147.32" y2="-60.96" width="0.1524" layer="91"/>
+<label x="147.32" y="-60.96" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="A6" class="0">
