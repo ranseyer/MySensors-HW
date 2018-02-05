@@ -19,79 +19,72 @@
 *******************************
 *
 * DESCRIPTION
-* The ArduinoGateway prints data received from sensors on the serial link.
-* The gateway accepts input on seral which will be sent out on radio network.
-*
-* The GW code is designed for Arduino Nano 328p / 16MHz
+* The RS485 Gateway prints data received from sensors on the serial link.
+* The gateway accepts input on seral which will be sent out on
+* the RS485 link.
 *
 * Wire connections (OPTIONAL):
 * - Inclusion button should be connected between digital pin 3 and GND
 * - RX/TX/ERR leds need to be connected between +5V (anode) and digital pin 6/5/4 with resistor 270-330R in a series
 *
 * LEDs (OPTIONAL):
-* - To use the feature, uncomment any of the MY_DEFAULT_xx_LED_PINs
 * - RX (green) - blink fast on radio message recieved. In inclusion mode will blink fast only on presentation recieved
 * - TX (yellow) - blink fast on radio message transmitted. In inclusion mode will blink slowly
 * - ERR (red) - fast blink on error during transmission error or recieve crc error
+*
+* If your Arduino board has additional serial ports
+* you can use to connect the RS485 module.
+* Otherwise, the gateway uses AltSoftSerial to handle two serial
+* links on one Arduino. Use the following pins for RS485 link
+*
+*  Board          Transmit  Receive   PWM Unusable
+* -----          --------  -------   ------------
+* Teensy 3.0 & 3.1  21        20         22
+* Teensy 2.0         9        10       (none)
+* Teensy++ 2.0      25         4       26, 27
+* Arduino Uno        9         8         10
+* Arduino Leonardo   5        13       (none)
+* Arduino Mega      46        48       44, 45
+* Wiring-S           5         6          4
+* Sanguino          13        14         12
 *
 */
 
 // Enable debug prints to serial monitor
 #define MY_DEBUG
 
+// Enable RS485 transport layer
+#define MY_RS485
 
-// Enable and select radio type attached
-//#define MY_RADIO_NRF24
-#define MY_RADIO_RFM69
+// Define this to enables DE-pin management on defined pin
+#define MY_RS485_DE_PIN 2
 
-// Enable and select radio type attached
+// Set RS485 baud rate to use
+#define MY_RS485_BAUD_RATE 38400
 
-#define MY_RADIO_RFM69
-#define MY_IS_RFM69HW // Lokale Vorschriften beachten ! 
-#define MY_RFM69_FREQUENCY RFM69_868MHZ
-#define MY_RFM69_NEW_DRIVER
-
-
-//#define MY_RFM69HW   true
-
-
-
-// Set LOW transmit power level as default, if you have an amplified NRF-module and
-// power your radio separately with a good regulator you can turn up PA level.
-#define MY_RF24_PA_LEVEL RF24_PA_LOW
+// Enable this if RS485 is connected to a hardware serial port
+//#define MY_RS485_HWSERIAL Serial1
 
 // Enable serial gateway
 #define MY_GATEWAY_SERIAL
 
-// Define a lower baud rate for Arduino's running on 8 MHz (Arduino Pro Mini 3.3V & SenseBender)
-#if F_CPU == 8000000L
-#define MY_BAUD_RATE 38400
-#endif
 
 // Enable inclusion mode
 #define MY_INCLUSION_MODE_FEATURE
 // Enable Inclusion mode button on gateway
-//#define MY_INCLUSION_BUTTON_FEATURE
-
-// Inverses behavior of inclusion button (if using external pullup)
-//#define MY_INCLUSION_BUTTON_EXTERNAL_PULLUP
-
+#define MY_INCLUSION_BUTTON_FEATURE
 // Set inclusion mode duration (in seconds)
-#define MY_INCLUSION_MODE_DURATION 300
+#define MY_INCLUSION_MODE_DURATION 120
 // Digital pin used for inclusion mode button
-//#define MY_INCLUSION_MODE_BUTTON_PIN  3
+#define MY_INCLUSION_MODE_BUTTON_PIN  3
 
 // Set blinking period
 #define MY_DEFAULT_LED_BLINK_PERIOD 300
 
-// Inverses the behavior of leds
-//#define MY_WITH_LEDS_BLINKING_INVERSE
-
 // Flash leds on rx/tx/err
-// Uncomment to override default HW configurations
-//#define MY_DEFAULT_ERR_LED_PIN 4  // Error led pin
-//#define MY_DEFAULT_RX_LED_PIN  6  // Receive led pin
-//#define MY_DEFAULT_TX_LED_PIN  5  // the PCB, on board LED
+#define MY_DEFAULT_ERR_LED_PIN 4  // Error led pin
+#define MY_DEFAULT_RX_LED_PIN  5  // Receive led pin
+#define MY_DEFAULT_TX_LED_PIN  6  // the PCB, on board LED
 
 #include <MySensors.h>
 
