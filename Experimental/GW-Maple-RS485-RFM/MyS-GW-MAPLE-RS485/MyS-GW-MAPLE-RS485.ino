@@ -51,24 +51,26 @@
 */
 
 // Enable debug prints to serial monitor
-//#define MY_DEBUG
+#define MY_DEBUG
+#define MY_DEBUG_HWSERIAL Serial // = Serial0 / Rx0 & Tx0 to programming & debug 
+
 
 // Enable RS485 transport layer
 #define MY_RS485
-
 // Define this to enables DE-pin management on defined pin
-#define MY_RS485_DE_PIN 2
-
+#define MY_RS485_DE_PIN 11
 // Set RS485 baud rate to use
 #define MY_RS485_BAUD_RATE 38400
 
 // Enable this if RS485 is connected to a hardware serial port
 // Not possible with Arduino Nano !!
-//#define MY_RS485_HWSERIAL Serial
+#define MY_RS485_HWSERIAL Serial1
+
+
 
 // Enable serial gateway
 #define MY_GATEWAY_SERIAL
-
+#define MY_SERIALDEVICE Serial // Serial = USB
 
 // Enable inclusion mode
 #define MY_INCLUSION_MODE_FEATURE
