@@ -1,7 +1,3 @@
-
-// Important: Not testet, RS485 Chip with 3,3V missing...
-
-
 /**
  * The MySensors Arduino library handles the wireless radio link and protocol
  * between your home built sensors/actuators and HA controller of choice.
@@ -26,44 +22,35 @@
  * Version 1.0 - Henrik Ekblad
  *
  * DESCRIPTION
- * This is an example of sensors using RS485 as transport layer
- *
  * Motion Sensor example using HC-SR501
  * http://www.mysensors.org/build/motion
  *
- * If your Arduino board has additional serial ports
- * you can use to connect the RS485 module.
- * Otherwise, the transport uses AltSoftSerial to handle two serial
- * links on one Arduino. Use the following pins for RS485 link
- *
- *  Board          Transmit  Receive   PWM Unusable
- * -----          --------  -------   ------------
- * Teensy 3.0 & 3.1  21        20         22
- * Teensy 2.0         9        10       (none)
- * Teensy++ 2.0      25         4       26, 27
- * Arduino Uno        9         8         10
- * Arduino Leonardo   5        13       (none)
- * Arduino Mega      46        48       44, 45
- * Wiring-S           5         6          4
- * Sanguino          13        14         12 *
- *
  */
 
-// Enable debug prints to serial monitor
+// Enable debug prints
 #define MY_DEBUG
 
-// Enable RS485 transport layer
-#define MY_RS485
+// Enable and select radio type attached
+// #define MY_RADIO_NRF24
+//#define MY_RADIO_NRF5_ESB
+//#define MY_RADIO_RFM69
+//#define MY_RADIO_RFM95
 
-// Define this to enables DE-pin management on defined pin
-#define MY_RS485_DE_PIN 2
 
-// Set RS485 baud rate to use
-#define MY_RS485_BAUD_RATE 38400
-#define MY_NODE_ID 35
 
-// Enable this if RS485 is connected to a hardware serial port
-//#define MY_RS485_HWSERIAL Serial
+//#define   MY_DEBUG_VERBOSE_RFM95
+#define MY_RADIO_RFM95
+#define MY_TRANSPORT_STATE_TIMEOUT_MS  (3*1000ul)
+#define RFM95_RETRY_TIMEOUT_MS  (3000ul) 
+#define MY_RFM95_FREQUENCY  (RFM95_868MHZ)
+#define MY_RFM95_MODEM_CONFIGRUATION  RFM95_BW125CR48SF4096
+//#define   MY_DEBUG_VERBOSE_RFM95_REGISTERS
+//#define MY_RFM95_ATC_TARGET_RSSI (-70)  // target RSSI -70dBm
+//#define   MY_RFM95_MAX_POWER_LEVEL_DBM (20)   // max. TX power 10dBm = 10mW
+
+
+
+
 
 #include <MySensors.h>
 

@@ -1,5 +1,4 @@
 
-// Important: Not testet, RS485 Chip with 3,3V missing...
 
 
 /**
@@ -26,28 +25,16 @@
  * Version 1.0 - Henrik Ekblad
  *
  * DESCRIPTION
- * This is an example of sensors using RS485 as transport layer
- *
  * Motion Sensor example using HC-SR501
  * http://www.mysensors.org/build/motion
  *
- * If your Arduino board has additional serial ports
- * you can use to connect the RS485 module.
- * Otherwise, the transport uses AltSoftSerial to handle two serial
- * links on one Arduino. Use the following pins for RS485 link
- *
- *  Board          Transmit  Receive   PWM Unusable
- * -----          --------  -------   ------------
- * Teensy 3.0 & 3.1  21        20         22
- * Teensy 2.0         9        10       (none)
- * Teensy++ 2.0      25         4       26, 27
- * Arduino Uno        9         8         10
- * Arduino Leonardo   5        13       (none)
- * Arduino Mega      46        48       44, 45
- * Wiring-S           5         6          4
- * Sanguino          13        14         12 *
- *
  */
+
+// Enable and select radio type attached
+//#define MY_RADIO_NRF24
+//#define MY_RADIO_NRF5_ESB
+//#define MY_RADIO_RFM69
+//#define MY_RADIO_RFM95
 
 // Enable debug prints to serial monitor
 #define MY_DEBUG
@@ -60,10 +47,19 @@
 
 // Set RS485 baud rate to use
 #define MY_RS485_BAUD_RATE 38400
-#define MY_NODE_ID 35
+#define MY_NODE_ID 31
 
 // Enable this if RS485 is connected to a hardware serial port
 //#define MY_RS485_HWSERIAL Serial
+
+
+
+
+
+
+
+
+
 
 #include <MySensors.h>
 
