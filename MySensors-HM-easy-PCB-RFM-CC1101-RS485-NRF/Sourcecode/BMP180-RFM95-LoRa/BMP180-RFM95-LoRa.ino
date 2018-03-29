@@ -14,10 +14,20 @@
 #define MY_TRANSPORT_STATE_TIMEOUT_MS  (3*1000ul)
 #define RFM95_RETRY_TIMEOUT_MS  (3000ul) 
 #define MY_RFM95_FREQUENCY  (RFM95_868MHZ)
+
 #define MY_RFM95_MODEM_CONFIGRUATION  RFM95_BW125CR48SF4096
+// BW125CR45SF128     Default, medium range 50ms
+// BW500CR45SF128     Fast, short range 15ms
+// BW31_25CR48SF512   Slow, long range 900ms
+// BW125CR48SF4096    Slow, long range 1500ms
+// https://docs.google.com/spreadsheets/d/1voGAtQAjC1qBmaVuP1ApNKs1ekgUjavHuVQIXyYSvNc
+
+
 //#define   MY_DEBUG_VERBOSE_RFM95_REGISTERS
 //#define MY_RFM95_ATC_TARGET_RSSI (-70)  // target RSSI -70dBm
 //#define   MY_RFM95_MAX_POWER_LEVEL_DBM (20)   // max. TX power 10dBm = 10mW
+
+ 
 
 
 
