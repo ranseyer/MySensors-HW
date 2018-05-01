@@ -47,7 +47,7 @@
 
 // Set RS485 baud rate to use
 #define MY_RS485_BAUD_RATE 38400
-#define MY_NODE_ID 31
+#define MY_NODE_ID 111
 
 // Enable this if RS485 is connected to a hardware serial port
 //#define MY_RS485_HWSERIAL Serial
