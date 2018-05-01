@@ -13760,12 +13760,32 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+05V">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VCC" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="+5V" symbol="+05V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -15085,6 +15105,169 @@ DIL version for mounting with pin header (and SMD soldering) and SMD only varian
 </deviceset>
 </devicesets>
 </library>
+<library name="maplemini-small">
+<packages>
+<package name="20-DIP">
+<pad name="1" x="-24.13" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="2" x="-21.59" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="3" x="-19.05" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="4" x="-16.51" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="5" x="-13.97" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="6" x="-11.43" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="7" x="-8.89" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="8" x="-6.35" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="9" x="-3.81" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="10" x="-1.27" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="11" x="1.27" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="12" x="3.81" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="13" x="6.35" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="14" x="8.89" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="15" x="11.43" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="16" x="13.97" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="17" x="16.51" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="18" x="19.05" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="19" x="21.59" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="20" x="24.13" y="-7.62" drill="1.016" diameter="1.27" shape="long" rot="R90"/>
+<pad name="21" x="24.13" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="22" x="21.59" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="23" x="19.05" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="24" x="16.51" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="25" x="13.97" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="26" x="11.43" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="27" x="8.89" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="28" x="6.35" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="29" x="3.81" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="30" x="1.27" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="31" x="-1.27" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="32" x="-3.81" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="33" x="-6.35" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="34" x="-8.89" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="35" x="-11.43" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="36" x="-13.97" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="37" x="-16.51" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="38" x="-19.05" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="39" x="-21.59" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<pad name="40" x="-24.13" y="7.62" drill="1" diameter="1.27" shape="long" rot="R270"/>
+<wire x1="-24.892" y1="9.144" x2="24.892" y2="9.144" width="0.127" layer="21"/>
+<wire x1="24.892" y1="-9.144" x2="-24.892" y2="-9.144" width="0.127" layer="121"/>
+<wire x1="25.654" y1="-8.382" x2="25.654" y2="8.382" width="0.127" layer="121"/>
+<wire x1="24.892" y1="-9.144" x2="25.654" y2="-8.382" width="0.127" layer="121" curve="90"/>
+<wire x1="24.892" y1="9.144" x2="25.654" y2="8.382" width="0.127" layer="121" curve="-90"/>
+<wire x1="-24.892" y1="9.144" x2="-25.654" y2="8.382" width="0.127" layer="121" curve="90"/>
+<wire x1="-25.654" y1="8.382" x2="-25.654" y2="-8.382" width="0.127" layer="121"/>
+<wire x1="-25.654" y1="-8.382" x2="-24.892" y2="-9.144" width="0.127" layer="121" curve="90"/>
+<wire x1="-25.654" y1="3.81" x2="-27.051" y2="3.81" width="0.127" layer="121"/>
+<wire x1="-27.051" y1="3.81" x2="-27.051" y2="-3.81" width="0.127" layer="121"/>
+<wire x1="-27.051" y1="-3.81" x2="-25.654" y2="-3.81" width="0.127" layer="121"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MAPLEMINI">
+<pin name="VCC" x="-27.94" y="22.86" visible="pin" length="middle"/>
+<pin name="GND" x="-27.94" y="20.32" visible="pin" length="middle"/>
+<pin name="BUT" x="-27.94" y="17.78" visible="pin" length="middle"/>
+<pin name="15/PWM/I2C1_SDA" x="-27.94" y="15.24" visible="pin" length="middle"/>
+<pin name="16/PWM/I2C1_SCL" x="-27.94" y="12.7" visible="pin" length="middle"/>
+<pin name="17" x="-27.94" y="10.16" visible="pin" length="middle"/>
+<pin name="18" x="-27.94" y="7.62" visible="pin" length="middle"/>
+<pin name="19" x="-27.94" y="5.08" visible="pin" length="middle"/>
+<pin name="20" x="-27.94" y="2.54" visible="pin" length="middle"/>
+<pin name="21" x="-27.94" y="0" visible="pin" length="middle"/>
+<pin name="22" x="-27.94" y="-2.54" visible="pin" length="middle"/>
+<pin name="23/USB_DP" x="-27.94" y="-5.08" visible="pin" length="middle"/>
+<pin name="24/USB_DM" x="-27.94" y="-7.62" visible="pin" length="middle"/>
+<pin name="25/PWM/RX1" x="-27.94" y="-10.16" visible="pin" length="middle"/>
+<pin name="26/PWM/TX1" x="-27.94" y="-12.7" visible="pin" length="middle"/>
+<pin name="27/PWM" x="-27.94" y="-15.24" visible="pin" length="middle"/>
+<pin name="28/SPI2_MOSI" x="-27.94" y="-17.78" visible="pin" length="middle"/>
+<pin name="29/SPI2_MISO" x="-27.94" y="-20.32" visible="pin" length="middle"/>
+<pin name="30/SPI2_SCK" x="-27.94" y="-22.86" visible="pin" length="middle"/>
+<pin name="31/SPI2_SS" x="-27.94" y="-25.4" visible="pin" length="middle"/>
+<pin name="AV+" x="27.94" y="22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="AV-" x="27.94" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="VBAT" x="27.94" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="14" x="27.94" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="13" x="27.94" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="12" x="27.94" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET" x="27.94" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="11/PWM/AIN" x="27.94" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="10/PWM/AIN" x="27.94" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="9/PWM/AIN/TX2" x="27.94" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="8/PWM/AIN/RX2" x="27.94" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="7/AIN/SPI1_SS" x="27.94" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="6/AIN/SPI1_SCK" x="27.94" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="5/PWM/AIN/SPI1_MISO" x="27.94" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="4/PWM/AIN/SPI1_MOSI" x="27.94" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="3/PWM/AIN" x="27.94" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="2/BOOT1" x="27.94" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="1/TX3/I2C2_SCL" x="27.94" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="0/RX3/I2C2_SDA" x="27.94" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="VIN" x="27.94" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<wire x1="-22.86" y1="25.4" x2="22.86" y2="25.4" width="0.254" layer="94"/>
+<wire x1="22.86" y1="25.4" x2="22.86" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-27.94" x2="-22.86" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-27.94" x2="-22.86" y2="25.4" width="0.254" layer="94"/>
+<text x="-22.86" y="26.035" size="1.778" layer="95">&gt;NAME</text>
+<text x="-22.86" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAPLEMINI">
+<gates>
+<gate name="G$1" symbol="MAPLEMINI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="20-DIP">
+<connects>
+<connect gate="G$1" pin="0/RX3/I2C2_SDA" pad="22"/>
+<connect gate="G$1" pin="1/TX3/I2C2_SCL" pad="23"/>
+<connect gate="G$1" pin="10/PWM/AIN" pad="32"/>
+<connect gate="G$1" pin="11/PWM/AIN" pad="33"/>
+<connect gate="G$1" pin="12" pad="35"/>
+<connect gate="G$1" pin="13" pad="36"/>
+<connect gate="G$1" pin="14" pad="37"/>
+<connect gate="G$1" pin="15/PWM/I2C1_SDA" pad="4"/>
+<connect gate="G$1" pin="16/PWM/I2C1_SCL" pad="5"/>
+<connect gate="G$1" pin="17" pad="6"/>
+<connect gate="G$1" pin="18" pad="7"/>
+<connect gate="G$1" pin="19" pad="8"/>
+<connect gate="G$1" pin="2/BOOT1" pad="24"/>
+<connect gate="G$1" pin="20" pad="9"/>
+<connect gate="G$1" pin="21" pad="10"/>
+<connect gate="G$1" pin="22" pad="11"/>
+<connect gate="G$1" pin="23/USB_DP" pad="12"/>
+<connect gate="G$1" pin="24/USB_DM" pad="13"/>
+<connect gate="G$1" pin="25/PWM/RX1" pad="14"/>
+<connect gate="G$1" pin="26/PWM/TX1" pad="15"/>
+<connect gate="G$1" pin="27/PWM" pad="16"/>
+<connect gate="G$1" pin="28/SPI2_MOSI" pad="17"/>
+<connect gate="G$1" pin="29/SPI2_MISO" pad="18"/>
+<connect gate="G$1" pin="3/PWM/AIN" pad="25"/>
+<connect gate="G$1" pin="30/SPI2_SCK" pad="19"/>
+<connect gate="G$1" pin="31/SPI2_SS" pad="20"/>
+<connect gate="G$1" pin="4/PWM/AIN/SPI1_MOSI" pad="26"/>
+<connect gate="G$1" pin="5/PWM/AIN/SPI1_MISO" pad="27"/>
+<connect gate="G$1" pin="6/AIN/SPI1_SCK" pad="28"/>
+<connect gate="G$1" pin="7/AIN/SPI1_SS" pad="29"/>
+<connect gate="G$1" pin="8/PWM/AIN/RX2" pad="30"/>
+<connect gate="G$1" pin="9/PWM/AIN/TX2" pad="31"/>
+<connect gate="G$1" pin="AV+" pad="40"/>
+<connect gate="G$1" pin="AV-" pad="39"/>
+<connect gate="G$1" pin="BUT" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RESET" pad="34"/>
+<connect gate="G$1" pin="VBAT" pad="38"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="21"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15161,6 +15344,12 @@ DIL version for mounting with pin header (and SMD soldering) and SMD only varian
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="22pF"/>
 <part name="X5" library="adafruit" deviceset="SMACONNECTOR" device="_EDGE"/>
+<part name="U$2" library="maplemini-small" deviceset="MAPLEMINI" device=""/>
+<part name="SUPPLY1" library="supply2" deviceset="VCC" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="supply2" deviceset="+5V" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15302,6 +15491,7 @@ Pin/Arduino     Port STM32
 <text x="275.59" y="67.31" size="3.81" layer="95" ratio="15">CC1101</text>
 <circle x="264.16" y="38.1" radius="5.6796125" width="0.1524" layer="102"/>
 <circle x="-93.98" y="5.08" radius="2.54" width="0.1524" layer="102"/>
+<text x="-259.08" y="63.5" size="3.81" layer="95" ratio="15">MAPLE-Mini</text>
 </plain>
 <instances>
 <instance part="CRYPTO" gate="U1" x="-88.9" y="127" smashed="yes">
@@ -15405,6 +15595,12 @@ Pin/Arduino     Port STM32
 <instance part="SUPPLY7" gate="G$1" x="269.24" y="62.23"/>
 <instance part="C2" gate="G$1" x="261.62" y="57.15" rot="R90"/>
 <instance part="X5" gate="G$1" x="314.96" y="43.18"/>
+<instance part="U$2" gate="G$1" x="-205.74" y="22.86"/>
+<instance part="SUPPLY1" gate="G$1" x="-182.88" y="58.42" rot="R90"/>
+<instance part="GND14" gate="1" x="-160.02" y="43.18" rot="R90"/>
+<instance part="SUPPLY14" gate="+5V" x="-176.53" y="-7.62" rot="R180"/>
+<instance part="GND17" gate="1" x="-240.03" y="52.07" rot="R180"/>
+<instance part="SUPPLY4" gate="G$1" x="-233.68" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -15668,6 +15864,20 @@ Pin/Arduino     Port STM32
 <wire x1="302.26" y1="45.72" x2="304.8" y2="45.72" width="0.1524" layer="91"/>
 <junction x="304.8" y="45.72"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="AV-"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="-177.8" y1="43.18" x2="-165.1" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-165.1" y1="43.18" x2="-162.56" y2="43.18" width="0.1524" layer="91"/>
+<label x="-175.26" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="-233.68" y1="43.18" x2="-240.03" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-240.03" y1="43.18" x2="-240.03" y2="49.53" width="0.1524" layer="91"/>
+<label x="-238.76" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="1">
 <segment>
@@ -15747,6 +15957,20 @@ Pin/Arduino     Port STM32
 <wire x1="269.24" y1="57.15" x2="269.24" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="57.15" x2="269.24" y2="57.15" width="0.1524" layer="91"/>
 <junction x="269.24" y="57.15"/>
+</segment>
+<segment>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+<pinref part="U$2" gate="G$1" pin="AV+"/>
+<wire x1="-180.34" y1="58.42" x2="-177.8" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="58.42" x2="-177.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-177.8" y1="53.34" x2="-177.8" y2="45.72" width="0.1524" layer="91"/>
+<label x="-177.8" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+<wire x1="-233.68" y1="45.72" x2="-233.68" y2="50.8" width="0.1524" layer="91"/>
+<label x="-233.68" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -15958,6 +16182,11 @@ Pin/Arduino     Port STM32
 <wire x1="-93.98" y1="78.74" x2="-104.14" y2="78.74" width="0.1524" layer="91"/>
 <label x="-104.14" y="78.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="14"/>
+<wire x1="-177.8" y1="38.1" x2="-162.56" y2="38.1" width="0.1524" layer="91"/>
+<label x="-175.26" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ANT1" class="0">
 <segment>
@@ -16052,6 +16281,11 @@ Pin/Arduino     Port STM32
 <wire x1="-93.98" y1="40.64" x2="-104.14" y2="40.64" width="0.1524" layer="91"/>
 <label x="-104.14" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="RESET"/>
+<wire x1="-177.8" y1="30.48" x2="-162.56" y2="30.48" width="0.1524" layer="91"/>
+<label x="-175.26" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="4" class="0">
 <segment>
@@ -16083,12 +16317,22 @@ Pin/Arduino     Port STM32
 <wire x1="-93.98" y1="76.2" x2="-104.14" y2="76.2" width="0.1524" layer="91"/>
 <label x="-104.14" y="76.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="13"/>
+<wire x1="-177.8" y1="35.56" x2="-162.56" y2="35.56" width="0.1524" layer="91"/>
+<label x="-175.26" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PC15" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="PC15"/>
 <wire x1="-93.98" y1="73.66" x2="-104.14" y2="73.66" width="0.1524" layer="91"/>
 <label x="-104.14" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="12"/>
+<wire x1="-177.8" y1="33.02" x2="-162.56" y2="33.02" width="0.1524" layer="91"/>
+<label x="-175.26" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA4" class="0">
@@ -16119,6 +16363,11 @@ Pin/Arduino     Port STM32
 <wire x1="261.62" y1="35.56" x2="269.24" y2="35.56" width="0.1524" layer="91"/>
 <label x="262.89" y="35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="7/AIN/SPI1_SS"/>
+<wire x1="-177.8" y1="17.78" x2="-162.56" y2="17.78" width="0.1524" layer="91"/>
+<label x="-175.26" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PA5" class="0">
 <segment>
@@ -16145,6 +16394,11 @@ Pin/Arduino     Port STM32
 <pinref part="CC0" gate="G$1" pin="SCLK"/>
 <wire x1="269.24" y1="45.72" x2="261.62" y2="45.72" width="0.1524" layer="91"/>
 <label x="262.89" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="6/AIN/SPI1_SCK"/>
+<wire x1="-177.8" y1="15.24" x2="-162.56" y2="15.24" width="0.1524" layer="91"/>
+<label x="-175.26" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA6" class="0">
@@ -16173,6 +16427,11 @@ Pin/Arduino     Port STM32
 <wire x1="261.62" y1="43.18" x2="269.24" y2="43.18" width="0.1524" layer="91"/>
 <label x="262.89" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="5/PWM/AIN/SPI1_MISO"/>
+<wire x1="-177.8" y1="12.7" x2="-162.56" y2="12.7" width="0.1524" layer="91"/>
+<label x="-175.26" y="12.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB0" class="0">
 <segment>
@@ -16192,6 +16451,11 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="21"/>
 <wire x1="-81.28" y1="-10.16" x2="-91.44" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-91.44" y="-10.16" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="3/PWM/AIN"/>
+<wire x1="-177.8" y1="7.62" x2="-162.56" y2="7.62" width="0.1524" layer="91"/>
+<label x="-175.26" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB1" class="0">
@@ -16216,6 +16480,12 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="8"/>
 <wire x1="-66.04" y1="7.62" x2="-53.34" y2="7.62" width="0.1524" layer="91"/>
 <label x="-53.34" y="7.62" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<wire x1="-162.56" y1="2.54" x2="-170.18" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="1/TX3/I2C2_SCL"/>
+<wire x1="-170.18" y1="2.54" x2="-177.8" y2="2.54" width="0.1524" layer="91"/>
+<label x="-175.26" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -16290,6 +16560,11 @@ Pin/Arduino     Port STM32
 <wire x1="-91.44" y1="0" x2="-81.28" y2="0" width="0.1524" layer="91"/>
 <label x="-91.44" y="0" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="BUT"/>
+<wire x1="-233.68" y1="40.64" x2="-248.92" y2="40.64" width="0.1524" layer="91"/>
+<label x="-241.3" y="40.64" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB7" class="0">
 <segment>
@@ -16301,6 +16576,11 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="12"/>
 <wire x1="-66.04" y1="2.54" x2="-53.34" y2="2.54" width="0.1524" layer="91"/>
 <label x="-53.34" y="2.54" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="15/PWM/I2C1_SDA"/>
+<wire x1="-233.68" y1="38.1" x2="-248.92" y2="38.1" width="0.1524" layer="91"/>
+<label x="-241.3" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB6" class="0">
@@ -16314,6 +16594,11 @@ Pin/Arduino     Port STM32
 <wire x1="-91.44" y1="2.54" x2="-81.28" y2="2.54" width="0.1524" layer="91"/>
 <label x="-91.44" y="2.54" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="16/PWM/I2C1_SCL"/>
+<wire x1="-233.68" y1="35.56" x2="-248.92" y2="35.56" width="0.1524" layer="91"/>
+<label x="-241.3" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB5" class="0">
 <segment>
@@ -16325,6 +16610,11 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="17"/>
 <wire x1="-91.44" y1="-5.08" x2="-81.28" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-91.44" y="-5.08" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="17"/>
+<wire x1="-233.68" y1="33.02" x2="-248.92" y2="33.02" width="0.1524" layer="91"/>
+<label x="-241.3" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB4" class="0">
@@ -16338,6 +16628,11 @@ Pin/Arduino     Port STM32
 <wire x1="-66.04" y1="-5.08" x2="-53.34" y2="-5.08" width="0.1524" layer="91"/>
 <label x="-53.34" y="-5.08" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="18"/>
+<wire x1="-233.68" y1="30.48" x2="-248.92" y2="30.48" width="0.1524" layer="91"/>
+<label x="-241.3" y="30.48" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB3" class="0">
 <segment>
@@ -16349,6 +16644,11 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="19"/>
 <wire x1="-91.44" y1="-7.62" x2="-81.28" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-91.44" y="-7.62" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="19"/>
+<wire x1="-233.68" y1="27.94" x2="-248.92" y2="27.94" width="0.1524" layer="91"/>
+<label x="-241.3" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA15" class="0">
@@ -16362,6 +16662,11 @@ Pin/Arduino     Port STM32
 <wire x1="-66.04" y1="-7.62" x2="-53.34" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-53.34" y="-7.62" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="20"/>
+<wire x1="-233.68" y1="25.4" x2="-248.92" y2="25.4" width="0.1524" layer="91"/>
+<label x="-241.3" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PA12" class="0">
 <segment>
@@ -16369,12 +16674,22 @@ Pin/Arduino     Port STM32
 <wire x1="-50.8" y1="53.34" x2="-40.64" y2="53.34" width="0.1524" layer="91"/>
 <label x="-48.26" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="23/USB_DP"/>
+<wire x1="-233.68" y1="17.78" x2="-248.92" y2="17.78" width="0.1524" layer="91"/>
+<label x="-241.3" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PA11" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="PA11/USB-"/>
 <wire x1="-50.8" y1="50.8" x2="-40.64" y2="50.8" width="0.1524" layer="91"/>
 <label x="-48.26" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="24/USB_DM"/>
+<wire x1="-233.68" y1="15.24" x2="-248.92" y2="15.24" width="0.1524" layer="91"/>
+<label x="-241.3" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA10" class="0">
@@ -16389,6 +16704,11 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="6"/>
 <wire x1="-66.04" y1="10.16" x2="-53.34" y2="10.16" width="0.1524" layer="91"/>
 <label x="-53.34" y="10.16" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="25/PWM/RX1"/>
+<wire x1="-233.68" y1="12.7" x2="-248.92" y2="12.7" width="0.1524" layer="91"/>
+<label x="-241.3" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA0" class="0">
@@ -16422,6 +16742,11 @@ Pin/Arduino     Port STM32
 <wire x1="261.62" y1="40.64" x2="269.24" y2="40.64" width="0.1524" layer="91"/>
 <label x="262.89" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="11/PWM/AIN"/>
+<wire x1="-177.8" y1="27.94" x2="-162.56" y2="27.94" width="0.1524" layer="91"/>
+<label x="-175.26" y="27.94" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PA1" class="0">
 <segment>
@@ -16452,6 +16777,11 @@ Pin/Arduino     Port STM32
 <wire x1="261.62" y1="38.1" x2="269.24" y2="38.1" width="0.1524" layer="91"/>
 <label x="262.89" y="38.1" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="10/PWM/AIN"/>
+<wire x1="-177.8" y1="25.4" x2="-162.56" y2="25.4" width="0.1524" layer="91"/>
+<label x="-175.26" y="25.4" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PA2" class="0">
 <segment>
@@ -16468,6 +16798,11 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="15"/>
 <wire x1="-91.44" y1="-2.54" x2="-81.28" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-91.44" y="-2.54" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="9/PWM/AIN/TX2"/>
+<wire x1="-162.56" y1="22.86" x2="-177.8" y2="22.86" width="0.1524" layer="91"/>
+<label x="-175.26" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA3" class="0">
@@ -16486,6 +16821,11 @@ Pin/Arduino     Port STM32
 <pinref part="MYSX" gate="1" pin="16"/>
 <wire x1="-66.04" y1="-2.54" x2="-53.34" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-53.34" y="-2.54" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="8/PWM/AIN/RX2"/>
+<wire x1="-177.8" y1="20.32" x2="-162.56" y2="20.32" width="0.1524" layer="91"/>
+<label x="-175.26" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA7" class="0">
@@ -16514,6 +16854,11 @@ Pin/Arduino     Port STM32
 <wire x1="261.62" y1="48.26" x2="269.24" y2="48.26" width="0.1524" layer="91"/>
 <label x="262.89" y="48.26" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="4/PWM/AIN/SPI1_MOSI"/>
+<wire x1="-177.8" y1="10.16" x2="-162.56" y2="10.16" width="0.1524" layer="91"/>
+<label x="-175.26" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB15" class="0">
 <segment>
@@ -16530,6 +16875,11 @@ Pin/Arduino     Port STM32
 <pinref part="RFM69W1" gate="A" pin="MOSI"/>
 <wire x1="119.38" y1="45.72" x2="137.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="121.92" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="28/SPI2_MOSI"/>
+<wire x1="-233.68" y1="5.08" x2="-248.92" y2="5.08" width="0.1524" layer="91"/>
+<label x="-241.3" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB14" class="0">
@@ -16548,6 +16898,11 @@ Pin/Arduino     Port STM32
 <wire x1="119.38" y1="40.64" x2="137.16" y2="40.64" width="0.1524" layer="91"/>
 <label x="121.92" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="29/SPI2_MISO"/>
+<wire x1="-233.68" y1="2.54" x2="-248.92" y2="2.54" width="0.1524" layer="91"/>
+<label x="-241.3" y="2.54" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB13" class="0">
 <segment>
@@ -16564,6 +16919,11 @@ Pin/Arduino     Port STM32
 <pinref part="RFM69W1" gate="A" pin="SCK"/>
 <wire x1="119.38" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
 <label x="121.92" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="30/SPI2_SCK"/>
+<wire x1="-233.68" y1="0" x2="-248.92" y2="0" width="0.1524" layer="91"/>
+<label x="-241.3" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB12" class="0">
@@ -16584,6 +16944,11 @@ Pin/Arduino     Port STM32
 <wire x1="119.38" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
 <label x="121.92" y="50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="31/SPI2_SS"/>
+<wire x1="-233.68" y1="-2.54" x2="-248.92" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-241.3" y="-2.54" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PA8" class="0">
 <segment>
@@ -16601,12 +16966,22 @@ Pin/Arduino     Port STM32
 <wire x1="-78.74" y1="124.46" x2="-71.12" y2="124.46" width="0.1524" layer="91"/>
 <label x="-69.85" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="27/PWM"/>
+<wire x1="-233.68" y1="7.62" x2="-248.92" y2="7.62" width="0.1524" layer="91"/>
+<label x="-241.3" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB11" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="PB11/RX3/SDA2"/>
 <wire x1="-93.98" y1="43.18" x2="-104.14" y2="43.18" width="0.1524" layer="91"/>
 <label x="-104.14" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="0/RX3/I2C2_SDA"/>
+<wire x1="-177.8" y1="0" x2="-162.56" y2="0" width="0.1524" layer="91"/>
+<label x="-175.26" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PA9" class="0">
@@ -16622,12 +16997,53 @@ Pin/Arduino     Port STM32
 <wire x1="-81.28" y1="10.16" x2="-91.44" y2="10.16" width="0.1524" layer="91"/>
 <label x="-91.44" y="10.16" size="1.778" layer="95" rot="R180"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="26/PWM/TX1"/>
+<wire x1="-248.92" y1="10.16" x2="-233.68" y2="10.16" width="0.1524" layer="91"/>
+<label x="-241.3" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ANT0" class="0">
 <segment>
 <pinref part="CC0" gate="G$1" pin="ANT"/>
 <pinref part="X5" gate="G$1" pin="ANT"/>
 <wire x1="302.26" y1="43.18" x2="307.34" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V" class="1">
+<segment>
+<pinref part="SUPPLY14" gate="+5V" pin="+5V"/>
+<pinref part="U$2" gate="G$1" pin="VIN"/>
+<wire x1="-177.8" y1="-2.54" x2="-176.53" y2="-3.81" width="0.1524" layer="91"/>
+<wire x1="-176.53" y1="-3.81" x2="-176.53" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PA13" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="22"/>
+<wire x1="-233.68" y1="20.32" x2="-248.92" y2="20.32" width="0.1524" layer="91"/>
+<label x="-241.3" y="20.32" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PA14" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="21"/>
+<wire x1="-233.68" y1="22.86" x2="-248.92" y2="22.86" width="0.1524" layer="91"/>
+<label x="-241.3" y="22.86" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RAW" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="VBAT"/>
+<wire x1="-177.8" y1="40.64" x2="-162.56" y2="40.64" width="0.1524" layer="91"/>
+<label x="-175.26" y="40.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PB2" class="1">
+<segment>
+<pinref part="U$2" gate="G$1" pin="2/BOOT1"/>
+<wire x1="-177.8" y1="5.08" x2="-162.56" y2="5.08" width="0.1524" layer="91"/>
+<label x="-175.26" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
