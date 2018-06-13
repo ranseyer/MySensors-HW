@@ -61,7 +61,7 @@
 #define MY_RS485_DE_PIN 2
 
 // Set RS485 baud rate to use
-#define MY_RS485_BAUD_RATE 38400
+#define MY_RS485_BAUD_RATE 19200
 
 // Enable this if RS485 is connected to a hardware serial port
 // Not possible with Arduino Nano !!
