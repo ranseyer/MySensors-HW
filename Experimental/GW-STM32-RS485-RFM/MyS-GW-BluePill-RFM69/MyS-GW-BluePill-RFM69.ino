@@ -1,3 +1,6 @@
+
+
+
 /**
 * The MySensors Arduino library handles the wireless radio link and protocol
 * between your home built sensors/actuators and HA controller of choice.
@@ -38,29 +41,50 @@
 
 // Enable debug prints to serial monitor
 #define MY_DEBUG
+#define MY_DEBUG_HWSERIAL Serial // = Serial0 / Rx0 & Tx0 to programming & debug 
+
 
 
 // Enable and select radio type attached
 //#define MY_RADIO_NRF24
 //#define MY_RADIO_NRF5_ESB
-//#define MY_RADIO_RFM69
-//#define MY_RADIO_RFM95
-
-
 
 #define MY_RADIO_RFM69
-//#define MY_IS_RFM69HW // Lokale Vorschriften beachten ! 
+#define MY_IS_RFM69HW // Lokale Vorschriften beachten ! 
 #define MY_RFM69_FREQUENCY RFM69_868MHZ
 #define MY_RFM69_NEW_DRIVER
 
+//RFM on Top
+#define MY_RFM69_CS_PIN PB12
+#define MY_RF69_IRQ_PIN PA1
+//#define MY_RF69_SPI_CS PB12
+#define MY_RF69_SPI_MISO_PIN PB14
+#define MY_RF69_SPI_MOSI_PIN PB15
+#define MY_RF69_SPI_SCK_PIN PB13
+
+//#define MY_SOFT_SPI_MISO_PIN 29
+//#define MY_SOFT_SPI_MOSI_PIN 28
+//#define MY_SOFT_SPI_SCK_PIN 30
+//#define RFM69_SPI_DATA_MODE
+
+
+//#define MY_IS_RFM69HW true
+// #define MY_RFM69_ENABLE_ENCRYPTION true
+
+
+//#define MY_RADIO_RFM95
+
+// Set LOW transmit power level as default, if you have an amplified NRF-module and
+// power your radio separately with a good regulator you can turn up PA level.
+//#define MY_RF24_PA_LEVEL RF24_PA_LOW
 
 // Enable serial gateway
 #define MY_GATEWAY_SERIAL
 
 // Define a lower baud rate for Arduino's running on 8 MHz (Arduino Pro Mini 3.3V & SenseBender)
-#if F_CPU == 8000000L
-#define MY_BAUD_RATE 38400
-#endif
+//#if F_CPU == 8000000L
+//#define MY_BAUD_RATE 38400
+//#endif
 
 // Enable inclusion mode
 #define MY_INCLUSION_MODE_FEATURE
@@ -91,15 +115,15 @@
 
 void setup()
 {
-	// Setup locally attached sensors
+    // Setup locally attached sensors
 }
 
 void presentation()
 {
-	// Present locally attached sensors
+    // Present locally attached sensors
 }
 
 void loop()
 {
-	// Send locally attached sensor data here
+    // Send locally attached sensor data here
 }

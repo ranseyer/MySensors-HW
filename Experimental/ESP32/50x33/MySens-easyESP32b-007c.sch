@@ -7648,6 +7648,154 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="con-lstb">
+<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
+Naming:&lt;p&gt;
+MA = male&lt;p&gt;
+# contacts - # rows&lt;p&gt;
+W = angled&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MA04-1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
+<text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="5.334" y="-0.635" size="1.27" layer="21" ratio="10">4</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MA04-1">
+<wire x1="3.81" y1="-7.62" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<text x="-1.27" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MA04-1" prefix="SV" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="MA04-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MA04-1">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
+<connect gate="1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="tp2112-usw-V2">
+<description>User library</description>
+<packages>
+<package name="TP4056-LITHIUM-PROTECTED-MODULE">
+<wire x1="-12.7" y1="8.255" x2="12.7" y2="8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="8.255" x2="12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-8.255" x2="-12.7" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="-12.7" y1="-8.255" x2="-12.7" y2="8.255" width="0.127" layer="21"/>
+<smd name="IN+" x="-12.065" y="6.985" dx="3.81" dy="1.9304" layer="1"/>
+<smd name="IN-" x="-12.065" y="-6.35" dx="3.81" dy="1.9304" layer="1"/>
+<smd name="OUT-" x="11.43" y="-6.35" dx="3.81" dy="1.9304" layer="1"/>
+<smd name="B-" x="11.43" y="-3.81" dx="3.81" dy="1.9304" layer="1"/>
+<smd name="B+" x="11.43" y="4.445" dx="3.81" dy="1.9304" layer="1"/>
+<smd name="OUT+" x="11.43" y="6.985" dx="3.81" dy="1.9304" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LITHIUM-CHG-PROTECT">
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="IN+" x="-12.7" y="5.08" length="middle" direction="pwr"/>
+<pin name="IN-" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
+<pin name="OUT+" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="B+" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="B-" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="OUT-" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TP4056-MODULE">
+<gates>
+<gate name="G$1" symbol="LITHIUM-CHG-PROTECT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP4056-LITHIUM-PROTECTED-MODULE">
+<connects>
+<connect gate="G$1" pin="B+" pad="B+"/>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 <library name="rcl@1">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -13818,59 +13966,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="tp2112-usw">
-<description>User library</description>
-<packages>
-<package name="TP4056-LITHIUM-PROTECTED-MODULE">
-<wire x1="-12.7" y1="8.255" x2="12.7" y2="8.255" width="0.127" layer="21"/>
-<wire x1="12.7" y1="8.255" x2="12.7" y2="-8.255" width="0.127" layer="21"/>
-<wire x1="12.7" y1="-8.255" x2="-12.7" y2="-8.255" width="0.127" layer="21"/>
-<wire x1="-12.7" y1="-8.255" x2="-12.7" y2="8.255" width="0.127" layer="21"/>
-<pad name="IN+" x="-11.43" y="6.985" drill="0.9" shape="square"/>
-<pad name="IN-" x="-11.43" y="-6.35" drill="0.9" shape="square"/>
-<pad name="OUT-" x="10.795" y="-6.35" drill="0.9" shape="square"/>
-<pad name="OUT+" x="10.795" y="6.985" drill="0.9" shape="square"/>
-<pad name="B+" x="10.795" y="4.445" drill="0.9" shape="square"/>
-<pad name="B-" x="10.795" y="-3.81" drill="0.9" shape="square"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LITHIUM-CHG-PROTECT">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="IN+" x="-12.7" y="5.08" length="middle" direction="pwr"/>
-<pin name="IN-" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
-<pin name="OUT+" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="B+" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="B-" x="12.7" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="OUT-" x="12.7" y="-5.08" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TP4056-MODULE">
-<gates>
-<gate name="G$1" symbol="LITHIUM-CHG-PROTECT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TP4056-LITHIUM-PROTECTED-MODULE">
-<connects>
-<connect gate="G$1" pin="B+" pad="B+"/>
-<connect gate="G$1" pin="B-" pad="B-"/>
-<connect gate="G$1" pin="IN+" pad="IN+"/>
-<connect gate="G$1" pin="IN-" pad="IN-"/>
-<connect gate="G$1" pin="OUT+" pad="OUT+"/>
-<connect gate="G$1" pin="OUT-" pad="OUT-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13924,13 +14019,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="10K"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
-<part name="TP4056" library="tp2112-usw" deviceset="TP4056-MODULE" device=""/>
+<part name="TP4056" library="tp2112-usw-V2" deviceset="TP4056-MODULE" device=""/>
 <part name="AP2112" library="SparkFun-IC-Power" deviceset="V_REG_AP2112" device="K-3.3V" value="3.3V"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="POWER" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="ANT2" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="100k"/>
-<part name="IN-FUSED" library="pinhead" deviceset="PINHD-1X1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14060,9 +14155,9 @@ macht den Reset und started den geflashten Sketch.</text>
 <instance part="AP2112" gate="G$1" x="-73.66" y="-132.08" rot="R90"/>
 <instance part="GND24" gate="1" x="-68.58" y="-160.02"/>
 <instance part="GND5" gate="1" x="-96.52" y="-157.48"/>
+<instance part="POWER" gate="1" x="-93.98" y="-177.8" rot="R90"/>
 <instance part="ANT2" gate="G$1" x="223.52" y="30.48"/>
 <instance part="R7" gate="G$1" x="-55.88" y="-142.24" rot="R180"/>
-<instance part="IN-FUSED" gate="G$1" x="-127" y="-177.8" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -14820,11 +14915,17 @@ macht den Reset und started den geflashten Sketch.</text>
 <pinref part="TP4056" gate="G$1" pin="B+"/>
 <wire x1="-96.52" y1="-144.78" x2="-88.9" y2="-144.78" width="0.1524" layer="91"/>
 <label x="-93.98" y="-147.32" size="1.778" layer="95"/>
+<pinref part="POWER" gate="1" pin="1"/>
 <wire x1="-88.9" y1="-144.78" x2="-88.9" y2="-170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B-" class="1">
 <segment>
+<pinref part="TP4056" gate="G$1" pin="B-"/>
+<wire x1="-96.52" y1="-149.86" x2="-93.98" y2="-149.86" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-149.86" x2="-91.44" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-93.98" y="-149.86" size="1.778" layer="95"/>
+<pinref part="POWER" gate="1" pin="2"/>
 <wire x1="-91.44" y1="-170.18" x2="-91.44" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -14840,6 +14941,19 @@ macht den Reset und started den geflashten Sketch.</text>
 <pinref part="TP4056" gate="G$1" pin="IN-"/>
 <wire x1="-121.92" y1="-152.4" x2="-121.92" y2="-160.02" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="-160.02" x2="-121.92" y2="-162.56" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="-162.56" x2="-93.98" y2="-162.56" width="0.1524" layer="91"/>
+<pinref part="POWER" gate="1" pin="3"/>
+<wire x1="-93.98" y1="-162.56" x2="-93.98" y2="-170.18" width="0.1524" layer="91"/>
+<label x="-109.22" y="-162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="IN+" class="2">
+<segment>
+<pinref part="POWER" gate="1" pin="4"/>
+<wire x1="-96.52" y1="-170.18" x2="-96.52" y2="-167.64" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="-167.64" x2="-127" y2="-167.64" width="0.1524" layer="91"/>
+<label x="-109.22" y="-165.1" size="1.778" layer="95"/>
+<pinref part="F2" gate="F1" pin="2"/>
 </segment>
 </net>
 <net name="IN++" class="2">
@@ -14878,21 +14992,6 @@ macht den Reset und started den geflashten Sketch.</text>
 <net name="N$6" class="1">
 <segment>
 <wire x1="119.38" y1="20.32" x2="124.46" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="1">
-<segment>
-<pinref part="TP4056" gate="G$1" pin="B-"/>
-<wire x1="-96.52" y1="-149.86" x2="-93.98" y2="-149.86" width="0.1524" layer="91"/>
-<label x="-93.98" y="-149.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IN-FUSED" class="0">
-<segment>
-<pinref part="F2" gate="F1" pin="2"/>
-<pinref part="IN-FUSED" gate="G$1" pin="1"/>
-<wire x1="-127" y1="-175.26" x2="-127" y2="-167.64" width="0.1524" layer="91"/>
-<label x="-121.92" y="-172.72" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
