@@ -1,0 +1,2 @@
+DRC SAVE 'D:/GitHub/MySensors-HW/Gateway-RFM-RS485/V40-RFM-Mini/GW-RFM-V40-Mini010.dru';
+RUN eagle2freerouter.ulp 'GW-RFM-V40-Mini010.dru';
