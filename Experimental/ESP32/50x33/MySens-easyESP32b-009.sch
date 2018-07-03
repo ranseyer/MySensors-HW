@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14026,6 +14026,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="POWER" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="ANT2" library="pinhead" deviceset="PINHD-1X1" device=""/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="100k"/>
+<part name="V1" library="supply" deviceset="VCC" device=""/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -14097,12 +14099,6 @@ AC-Widerstand ca. bei 120 Ohm (150 // (330+330)) = 122,2.</text>
 <text x="88.9" y="149.86" size="6.4516" layer="102">Achtung</text>
 <circle x="152.4" y="27.94" radius="2.54" width="0.1524" layer="102"/>
 <text x="137.16" y="55.88" size="5.08" layer="102">???? io5 ???</text>
-<wire x1="15.24" y1="73.66" x2="15.24" y2="27.94" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="43.18" y1="27.94" x2="43.18" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="43.18" y1="78.74" x2="15.24" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="15.24" y1="78.74" x2="15.24" y2="73.66" width="0.1524" layer="97" style="shortdash"/>
-<text x="15.24" y="25.4" size="1.778" layer="97">Kann Weg bei Platzmangel</text>
 <text x="-63.5" y="-55.88" size="1.778" layer="97">Wenn man die Pins von dem MYSx Stecker: 3.3V, GND, RX, TX, EN und GPIO00
 nimmt und einen Standad USB Programmer (z.B. einen FDDI um 1,60€) nimmt und den
 EN auf RTS und GPIO00 auf DTR verbindet. Dann setzt der Flasher den Chip automatisch in den Flash Mode, führt den Flash durch und
@@ -14158,6 +14154,8 @@ macht den Reset und started den geflashten Sketch.</text>
 <instance part="POWER" gate="1" x="-93.98" y="-177.8" rot="R90"/>
 <instance part="ANT2" gate="G$1" x="223.52" y="30.48"/>
 <instance part="R7" gate="G$1" x="-55.88" y="-142.24" rot="R180"/>
+<instance part="V1" gate="VCC" x="25.4" y="66.04"/>
+<instance part="R5" gate="G$1" x="25.4" y="58.42" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -14339,6 +14337,10 @@ macht den Reset und started den geflashten Sketch.</text>
 <pinref part="AP2112" gate="G$1" pin="OUT"/>
 <wire x1="-78.74" y1="-124.46" x2="-78.74" y2="-119.38" width="0.1524" layer="91"/>
 <label x="-81.28" y="-119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="V1" gate="VCC" pin="VCC"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="A4" class="0">
@@ -14529,8 +14531,12 @@ macht den Reset und started den geflashten Sketch.</text>
 <segment>
 <label x="-2.54" y="50.8" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="IO0"/>
-<wire x1="-5.08" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="50.8" x2="5.08" y2="50.8" width="0.1524" layer="91"/>
 <label x="20.32" y="53.34" size="1.778" layer="95" rot="R180"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<label x="20.32" y="53.34" size="1.778" layer="95" rot="R180"/>
+<wire x1="25.4" y1="50.8" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="50.8" x2="25.4" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MYSX" gate="1" pin="9"/>
