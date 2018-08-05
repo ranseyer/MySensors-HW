@@ -44,16 +44,25 @@
 //#define MY_RADIO_NRF24
 //#define MY_RADIO_NRF5_ESB
 //#define MY_RADIO_RFM69
-//#define MY_RADIO_RFM95
+#define MY_RADIO_RFM95
+
+//#define   MY_DEBUG_VERBOSE_RFM95
+#define MY_RADIO_RFM95
+#define MY_TRANSPORT_STATE_TIMEOUT_MS  (3*1000ul)
+#define RFM95_RETRY_TIMEOUT_MS  (3000ul) 
+#define MY_RFM95_FREQUENCY  (RFM95_434MHZ)
+#define MY_RFM95_MODEM_CONFIGRUATION  RFM95_BW31_25CR48SF512 
+//#define MY_RFM95_MODEM_CONFIGRUATION  RFM95_BW125CR48SF4096
+//#define   MY_DEBUG_VERBOSE_RFM95_REGISTERS
+//#define MY_RFM95_ATC_TARGET_RSSI (-70)  // target RSSI -70dBm
+//#define   MY_RFM95_MAX_POWER_LEVEL_DBM (20)   // max. TX power 10dBm = 10mW
 
 
 
-#define MY_RADIO_RFM69
-#define MY_IS_RFM69HW // Lokale Vorschriften beachten ! 
-#define MY_RFM69_FREQUENCY RFM69_868MHZ
-#define MY_RFM69_NEW_DRIVER
-#define MY_SIGNAL_REPORT_ENABLED
 
+// Set LOW transmit power level as default, if you have an amplified NRF-module and
+// power your radio separately with a good regulator you can turn up PA level.
+// #define MY_RF24_PA_LEVEL RF24_PA_LOW
 
 // Enable serial gateway
 #define MY_GATEWAY_SERIAL
@@ -92,15 +101,15 @@
 
 void setup()
 {
-	// Setup locally attached sensors
+  // Setup locally attached sensors
 }
 
 void presentation()
 {
-	// Present locally attached sensors
+  // Present locally attached sensors
 }
 
 void loop()
 {
-	// Send locally attached sensor data here
+  // Send locally attached sensor data here
 }

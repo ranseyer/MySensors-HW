@@ -1,18 +1,15 @@
 // Enable debug prints to serial monitor
 #define MY_DEBUG
 
-
-// Enable and select radio type attached
-//#define MY_RADIO_NRF24
-//#define MY_RADIO_NRF5_ESB
-//#define MY_RADIO_RFM95
-
-
-
 #define MY_RADIO_RFM69
 #define MY_IS_RFM69HW // Lokale Vorschriften beachten ! 
 #define MY_RFM69_FREQUENCY RFM69_868MHZ
 #define MY_RFM69_NEW_DRIVER
+
+//Special Options for testing new FHEM module
+#define MY_SPECIAL_DEBUG
+#define MY_SIGNAL_REPORT_ENABLED //most likely only needed for nRF-Type nodes to get a pseudo-value - https://forum.mysensors.org/topic/9073/new-2-2-0-signal-report-function
+#define MY_SMART_SLEEP_WAIT_DURATION_MS 500
 
 
 // Define a lower baud rate for Arduino's running on 8 MHz (Arduino Pro Mini 3.3V & SenseBender)
@@ -24,7 +21,8 @@
 
 #include <MySensors.h>
 
-uint32_t SLEEP_TIME = 120000; // Sleep time between reports (in milliseconds)
+//uint32_t SLEEP_TIME = 120000; // Sleep time between reports (in milliseconds)
+uint32_t SLEEP_TIME = 30000; // Sleep time between reports (in milliseconds)
 #define DIGITAL_INPUT_SENSOR 3   // The digital input you attached your motion sensor.  (Only 2 and 3 generates interrupt!)
 #define CHILD_ID 1   // Id of the sensor child
 
@@ -39,10 +37,10 @@ void setup()
 void presentation()
 {
   // Send the sketch version information to the gateway and Controller
-  sendSketchInfo("Motion Sensor", "1.0");
+  sendSketchInfo("Motion Sensor", "1.0.0");
 
   // Register all sensors to gw (they will be created as child devices)
-  present(CHILD_ID, S_MOTION);
+  present(CHILD_ID, S_MOTION,"Test 0.1 ä");
 }
 
 void loop()
@@ -50,11 +48,12 @@ void loop()
   // Read digital motion value
   bool tripped = digitalRead(DIGITAL_INPUT_SENSOR) == HIGH;
 
-  Serial.println(tripped);
-  send(msg.set(tripped?"1":"0"));  // Send tripped value to gw
+  //Serial.println(tripped);
+  //send(msg.set(tripped?"1":"0"));  // Send tripped value to gw
 
-  // Sleep until interrupt comes in on motion sensor. Send update every two minute.
-  sleep(digitalPinToInterrupt(DIGITAL_INPUT_SENSOR), CHANGE, SLEEP_TIME);
+ // Sleep until interrupt comes in on motion sensor. Send update every two minute.
+ // Important: Use smartSleep !!!
+  smartSleep(digitalPinToInterrupt(DIGITAL_INPUT_SENSOR), CHANGE, SLEEP_TIME);
 }
 
 
