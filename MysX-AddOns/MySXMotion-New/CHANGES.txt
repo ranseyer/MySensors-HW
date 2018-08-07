@@ -1,0 +1,5 @@
+Modifications made by Licensee (see section 3.4.b in the LICENSE.txt file)
+
+v1.1 - First public release
+
+vM1.2: Smaller by Ranseyer
