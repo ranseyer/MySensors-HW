@@ -50,7 +50,7 @@
 #define MY_NODE_ID 111
 
 // Enable this if RS485 is connected to a hardware serial port
-//#define MY_RS485_HWSERIAL Serial
+#define MY_RS485_HWSERIAL Serial1
 
 
 
