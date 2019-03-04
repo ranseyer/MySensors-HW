@@ -4402,10 +4402,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="D2">
 <contactref element="SV2" pad="9"/>
 </signal>
-<signal name="N$2" class="1">
-</signal>
-<signal name="N$1" class="1">
-</signal>
 <signal name="V2" class="1">
 <contactref element="C1" pad="1"/>
 <contactref element="IC2" pad="2"/>
