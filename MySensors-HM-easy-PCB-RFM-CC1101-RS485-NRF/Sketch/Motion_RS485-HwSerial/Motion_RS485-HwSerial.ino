@@ -30,6 +30,8 @@
  *
  */
 
+// Test OK with MySensors-HM-easy-PCB-RFM-CC1101-RS485-NRF\1B_Standard-RJ45 an Pro-Mini
+
 // Enable and select radio type attached
 //#define MY_RADIO_NRF24
 //#define MY_RADIO_NRF5_ESB
@@ -37,7 +39,7 @@
 //#define MY_RADIO_RFM95
 
 // Enable debug prints to serial monitor
-#define MY_DEBUG
+//#define MY_DEBUG
 
 // Enable RS485 transport layer
 #define MY_RS485
@@ -47,11 +49,11 @@
 
 // Set RS485 baud rate to use
 #define MY_RS485_BAUD_RATE 19200
-#define MY_NODE_ID 120
+#define MY_NODE_ID 119
 
 // Enable this if RS485 is connected to a hardware serial port
-//#define MY_RS485_HWSERIAL Serial
-//#define MY_SPLASH_SCREEN_DISABLED
+#define MY_RS485_HWSERIAL Serial
+#define MY_SPLASH_SCREEN_DISABLED
 #define MY_TRANSPORT_WAIT_READY_MS 3000
 
 

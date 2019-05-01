@@ -37,23 +37,22 @@
 //#define MY_RADIO_RFM95
 
 // Enable debug prints to serial monitor
-#define MY_DEBUG
+//#define MY_DEBUG
+//#define MY_DEBUG_LOCAL
 
 // Enable RS485 transport layer
 #define MY_RS485
+#define MY_RS485_HWSERIAL Serial1
+#define MY_SPLASH_SCREEN_DISABLED
 
 // Define this to enables DE-pin management on defined pin
-#define MY_RS485_DE_PIN 2
-
+//#define MY_RS485_DE_PIN 2
 // Set RS485 baud rate to use
-#define MY_RS485_BAUD_RATE 19200
-#define MY_NODE_ID 120
+#define MY_RS485_BAUD_RATE 19200 //57600 //38400 //9600
+//#define MY_RS485_SOH_COUNT 3
+#define MY_TRANSPORT_WAIT_READY_MS 20000
 
-// Enable this if RS485 is connected to a hardware serial port
-//#define MY_RS485_HWSERIAL Serial
-//#define MY_SPLASH_SCREEN_DISABLED
-#define MY_TRANSPORT_WAIT_READY_MS 3000
-
+#define MY_NODE_ID 119
 
 
 #include <MySensors.h>
