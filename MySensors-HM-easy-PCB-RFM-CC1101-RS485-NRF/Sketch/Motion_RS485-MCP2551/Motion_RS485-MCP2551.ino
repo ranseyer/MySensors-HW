@@ -52,7 +52,7 @@
 //#define MY_RS485_SOH_COUNT 3
 #define MY_TRANSPORT_WAIT_READY_MS 20000
 
-#define MY_NODE_ID 119
+#define MY_NODE_ID 113
 
 
 #include <MySensors.h>

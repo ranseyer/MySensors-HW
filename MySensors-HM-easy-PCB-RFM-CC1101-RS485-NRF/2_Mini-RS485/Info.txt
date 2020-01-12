@@ -1,0 +1,3 @@
+Tested: OK
+
+Zum Flashen RX-Sel unterbrechen, oder besser den Ardino ohne den Max487 flashen.
